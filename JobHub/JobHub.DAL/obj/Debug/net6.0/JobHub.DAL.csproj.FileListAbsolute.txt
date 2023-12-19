@@ -1,0 +1,24 @@
+D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.csproj.AssemblyReference.cache
+D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.AssemblyInfoInputs.cache
+D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.AssemblyInfo.cs
+D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.csproj.CoreCompileInputs.cache
+D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.DAL\bin\Debug\net6.0\JobHub.DAL.deps.json
+D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.DAL\bin\Debug\net6.0\JobHub.DAL.dll
+D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.DAL\bin\Debug\net6.0\JobHub.DAL.pdb
+D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.dll
+D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.DAL\obj\Debug\net6.0\refint\JobHub.DAL.dll
+D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.pdb
+D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.DAL\obj\Debug\net6.0\ref\JobHub.DAL.dll
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.DAL\bin\Debug\net6.0\JobHub.DAL.deps.json
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.DAL\bin\Debug\net6.0\JobHub.DAL.dll
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.DAL\bin\Debug\net6.0\JobHub.DAL.pdb
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.csproj.AssemblyReference.cache
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.AssemblyInfoInputs.cache
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.AssemblyInfo.cs
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.csproj.CoreCompileInputs.cache
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.dll
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.DAL\obj\Debug\net6.0\refint\JobHub.DAL.dll
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.DAL\obj\Debug\net6.0\JobHub.DAL.pdb
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.DAL\obj\Debug\net6.0\ref\JobHub.DAL.dll

@@ -1,0 +1,82 @@
+﻿@model JobHub.Web.Areas.Personal.Models.AuthModel
+@{
+    Layout = null;
+}
+<body>
+    @using (Html.BeginForm("SignUp", "Auth", FormMethod.Post))
+    {
+        <h1>Registration</h1>
+        <div class="form-group">
+            @Html.EditorFor(m => m.Name, new { htmlAttributes = new { @placeholder="Name" } })
+            @Html.ValidationMessageFor(m => m.Name)
+        </div>
+        <div class="form-group">
+            @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @placeholder="Email" } })
+            @Html.ValidationMessageFor(m => m.Email)
+        </div>
+        <div class="form-group">
+            @Html.EditorFor(m => m.Password, new { htmlAttributes = new { @placeholder="Password" } })
+            @Html.ValidationMessageFor(m => m.Password)
+        </div>
+        <p><input class="submit-btn" type="submit" value="Sign up" /></p>
+    }
+</body>
+<style type="text/css">
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        display: grid;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+    }
+
+    #Name {
+        width: 220px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid black;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #Email {
+        width: 220px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid black;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+
+    #Password {
+        width: 220px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid black;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .submit-btn {
+        width: 100px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+    }
+</style>

@@ -1,0 +1,84 @@
+﻿@using Microsoft.AspNetCore.Components.Web.Virtualization
+@model JobHub.Web.Areas.Personal.Models.AuthModel
+@{
+    Layout = null;
+}
+<body>
+    @using (Html.BeginForm("SignIn", "Auth", FormMethod.Post))
+    {
+        <h1>Login</h1>
+        <div class="form-group">
+            @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @placeholder="Email" } })
+            @Html.ValidationMessageFor(m => m.Email)
+        </div>
+        <div class="form-group">
+            @Html.EditorFor(m => m.Password, new { htmlAttributes = new { @placeholder="Password" } })
+            @Html.ValidationMessageFor(m => m.Password)
+        </div>
+        <div class="container-btn">
+            <p><input class="submit-btn" type="submit" value="Sign In" /></p>
+            <p>@Html.ActionLink("Sign up", "Registration", "Auth")</p>
+        </div>
+    }
+</body>
+<style type="text/css">
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        display: grid;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+    }
+
+    #Email {
+        width: 220px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid black;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #Password {
+        width: 220px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid black;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+
+    .container-btn {
+        display: flex;
+        gap: 20px;
+    }
+    .container-btn > p > a {
+        display: flex;
+        width: 100px;
+        height: 27px;
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        border: 2px solid black;
+    }
+    .submit-btn {
+        width: 100px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+    }
+</style>

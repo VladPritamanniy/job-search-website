@@ -1,0 +1,25 @@
+﻿@model JobHub.Web.Areas.Main.Models.ProductListModel
+<div class="text-center">
+    <ul style="list-style-type: none;">
+        @if (Model != null)
+        {
+            @foreach (var item in Model.Items)
+            {
+                <li>
+                    <a>
+                        @item.Id
+                    </a>
+                    <a>
+                        @item.Name
+                    </a>
+                    <a>
+                        @item.Price
+                    </a>
+                    <a>
+                        @item.Units
+                    </a>
+                </li>
+            }
+        }
+    </ul>
+</div>

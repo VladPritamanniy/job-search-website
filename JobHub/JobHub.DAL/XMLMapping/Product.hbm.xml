@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="JobHub.DAL" namespace="JobHub.DAL.DBObjects">
+  <class name="DBProduct" table="Product">
+    <id name="Id" column="ID">
+      <generator class="native"/>
+    </id>
+    <property name="Name" column="Name"/>
+    <property name="Units" column="Units"/>
+    <property name="Price" column="Price"/>
+  </class>
+</hibernate-mapping>
