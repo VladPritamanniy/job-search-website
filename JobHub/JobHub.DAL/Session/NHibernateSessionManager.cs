@@ -12,8 +12,6 @@ namespace JobHub.DAL.Session
         private readonly ISessionFactory _sessionFactory;
         private ISession _currentSession;
 
-        #region Thread-safe, lazy Singleton
-
         public static NHibernateSessionManager Instance => Nested.NHibernateSessionManager;
 
         private NHibernateSessionManager()
@@ -35,16 +33,11 @@ namespace JobHub.DAL.Session
             _sessionFactory = nhibernateConfig.BuildSessionFactory();
         }
 
-        /// <summary>
-        /// Assists with ensuring thread-safe, lazy singleton
-        /// </summary>
         private class Nested
         {
             static Nested() { }
             internal static readonly NHibernateSessionManager NHibernateSessionManager = new NHibernateSessionManager();
         }
-
-        #endregion
 
         public ISession GetSession()
         {
