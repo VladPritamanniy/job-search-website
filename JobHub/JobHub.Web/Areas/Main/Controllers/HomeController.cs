@@ -4,6 +4,8 @@ using JobHub.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using JobHub.Web.Configuration;
+using dotless.Core.Parser.Tree;
+using JobHub.Web.Helpers;
 
 namespace JobHub.Web.Areas.Main.Controllers
 {
@@ -18,11 +20,10 @@ namespace JobHub.Web.Areas.Main.Controllers
 
         public IActionResult Index()
         {
-            string productName = "Tea";
-            var products = WrapperQuery.WrapperProduct.GetProductsByName(productName);
-            var users = Mapper.Map(products);
-            var productsList = new ProductListModel() { Items = users };
-            return View("~/Areas/Main/Views/Home/Index.cshtml", productsList);
+            var vacancies = WrapperQuery.WrapperVacancy.GetVacancy();
+            var vacanciesMap = Mapper.Map(vacancies);
+            var vacanciesList = new VacancyListModel() { Items = vacanciesMap };
+            return View("~/Areas/Main/Views/Home/Index.cshtml", vacanciesList);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

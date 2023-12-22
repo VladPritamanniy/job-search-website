@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="JobHub.DAL" namespace="JobHub.DAL.DBObjects">
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="JobHub.DAL" namespace="JobHub.DAL.Data.DBObjects">
   <class name="DBUsers" table="Users">
-    <id name="Id" column="ID">
+    <id name="ID" column="ID">
       <generator class="native"/>
     </id>
     <property name="Name" column="Name"/>

@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="XMLMapping\Product.hbm.xml" />
-    <EmbeddedResource Include="XMLMapping\Users.hbm.xml" />
+    <None Remove="Data\XMLMapping\Vacancy.hbm.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\XMLMapping\Vacancy.hbm.xml" />
+    <EmbeddedResource Include="Data\XMLMapping\Users.hbm.xml" />
   </ItemGroup>
 
   <ItemGroup>

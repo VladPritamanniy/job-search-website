@@ -1,3 +1,5 @@
+using JobHub.Web.Helpers;
+
 namespace JobHub.Web
 {
     public class Program
@@ -6,7 +8,7 @@ namespace JobHub.Web
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddMemoryCache();
             var app = builder.Build();
 
             if (!app.Environment.IsDevelopment())

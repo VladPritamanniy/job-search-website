@@ -279,6 +279,14 @@ D:\Дипломная работа НАУ 4-й курс\Examples and test progra
 D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.Web\bin\Debug\net6.0\System.Web.Optimization.dll
 D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.Web\bin\Debug\net6.0\System.Web.Optimization.Less.dll
 D:\Дипломная работа НАУ 4-й курс\Examples and test program\TestMVCProject\JobHub\JobHub.Web\bin\Debug\net6.0\WebGrease.dll
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.csproj.AssemblyReference.cache
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.GeneratedMSBuildEditorConfig.editorconfig
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.AssemblyInfoInputs.cache
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.AssemblyInfo.cs
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.csproj.CoreCompileInputs.cache
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.MvcApplicationPartsAssemblyInfo.cache
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.RazorAssemblyInfo.cache
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.RazorAssemblyInfo.cs
 D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\bin\Debug\net6.0\appsettings.Development.json
 D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\bin\Debug\net6.0\appsettings.json
 D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\bin\Debug\net6.0\JobHub.Web.staticwebassets.runtime.json
@@ -536,14 +544,6 @@ D:\Дипломная работа НАУ 4-й курс\Program\job-search-websi
 D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\bin\Debug\net6.0\JobHub.DAL.dll
 D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\bin\Debug\net6.0\JobHub.BLL.pdb
 D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\bin\Debug\net6.0\JobHub.DAL.pdb
-D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.csproj.AssemblyReference.cache
-D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.GeneratedMSBuildEditorConfig.editorconfig
-D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.AssemblyInfoInputs.cache
-D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.AssemblyInfo.cs
-D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.csproj.CoreCompileInputs.cache
-D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.MvcApplicationPartsAssemblyInfo.cache
-D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.RazorAssemblyInfo.cache
-D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\JobHub.Web.RazorAssemblyInfo.cs
 D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\staticwebassets\msbuild.JobHub.Web.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\staticwebassets\msbuild.build.JobHub.Web.props
 D:\Дипломная работа НАУ 4-й курс\Program\job-search-website\JobHub\JobHub.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.JobHub.Web.props

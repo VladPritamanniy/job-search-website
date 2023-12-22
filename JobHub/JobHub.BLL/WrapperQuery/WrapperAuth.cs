@@ -1,5 +1,5 @@
-﻿using JobHub.DAL.DBObjects;
-using JobHub.DAL.DataQueries;
+﻿using JobHub.DAL.DataQueries;
+using JobHub.DAL.Data.DBObjects;
 
 namespace JobHub.BLL.WrapperQuery
 {
@@ -7,7 +7,7 @@ namespace JobHub.BLL.WrapperQuery
     {
         public static class WrapperAuth
         {
-            public static bool FindPasswordCredential(DBUsers model)
+            public static DBUsers FindPasswordCredential(DBUsers model)
             {
                 return DataQuery.UsersQuery.FindPasswordCredential(model);
             }

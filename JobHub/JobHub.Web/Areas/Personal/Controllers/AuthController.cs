@@ -20,11 +20,13 @@ namespace JobHub.Web.Areas.Personal.Controllers
         [HttpPost]
         public IActionResult SignIn(AuthModel model)
         {
-            var userModel = Mapper.Map(model);
-            var isAutorize = WrapperQuery.WrapperAuth.FindPasswordCredential(userModel);
-            if (isAutorize)
+            var mappedModel = Mapper.Map(model);
+            var userModel = WrapperQuery.WrapperAuth.FindPasswordCredential(mappedModel);
+            var user = Mapper.Map(userModel);
+            if (user != null)
             {
-                return RedirectToAction("Index", "Home");
+                HttpContext.Response.Cookies.Append("userName", user.Name);
+                return Redirect("/");
             }
             return View("~/Areas/Personal/Views/Auth/Login.cshtml");
         }
@@ -34,7 +36,8 @@ namespace JobHub.Web.Areas.Personal.Controllers
         {
             var userModel = Mapper.Map(model);
             WrapperQuery.WrapperAuth.WritePasswordCredential(userModel);
-            return RedirectToAction("Index", "Home");
+            HttpContext.Response.Cookies.Append("userName", userModel.Name);
+            return Redirect("/");
         }
     }
 }

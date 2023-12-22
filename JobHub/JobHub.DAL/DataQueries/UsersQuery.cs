@@ -1,4 +1,4 @@
-﻿using JobHub.DAL.DBObjects;
+﻿using JobHub.DAL.Data.DBObjects;
 using JobHub.DAL.Session;
 
 namespace JobHub.DAL.DataQueries
@@ -7,7 +7,7 @@ namespace JobHub.DAL.DataQueries
     {
         public static class UsersQuery
         {
-            public static bool FindPasswordCredential(DBUsers model)
+            public static DBUsers FindPasswordCredential(DBUsers model)
             {
                 using (var session = NHibernateSessionManager.Instance.GetSession())
                 {
@@ -15,9 +15,9 @@ namespace JobHub.DAL.DataQueries
                     var query = session.CreateSQLQuery(sql).AddEntity(typeof(DBUsers)).SetString("email", model.Email).SetString("password", model.Password).List();
                     if (query.Count == 1)
                     {
-                        return true;
+                        return query[0] as DBUsers;
                     }
-                    return false;
+                    return null;
                 }
             }
 
@@ -41,7 +41,6 @@ namespace JobHub.DAL.DataQueries
                         }
                         catch (Exception ex)
                         {
-                            // Обработка ошибок, если необходимо
                             transaction.Rollback();
                             throw;
                         }

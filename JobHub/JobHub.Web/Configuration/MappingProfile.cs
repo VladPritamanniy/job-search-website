@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using JobHub.DAL.DBObjects;
+using JobHub.DAL.Data.DBObjects;
 using JobHub.Web.Areas.Main.Models;
 using JobHub.Web.Areas.Personal.Models;
 
@@ -13,19 +13,24 @@ namespace JobHub.Web.Configuration
         {
             _mapper = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<DBProduct, ProductModel>().ReverseMap();
+                cfg.CreateMap<VacancyModel, DBVacancy>().ReverseMap();
                 cfg.CreateMap<AuthModel, DBUsers> ().ReverseMap();
             }).CreateMapper();
         }
 
-        public static IEnumerable<ProductModel> Map(IEnumerable<DBProduct> source)
+        public static IEnumerable<VacancyModel> Map(IEnumerable<DBVacancy> source)
         {
-            return _mapper.Map<IEnumerable<ProductModel>>(source);
+            return _mapper.Map<IEnumerable<VacancyModel>>(source);
         }
 
         public static DBUsers Map(AuthModel source)
         {
             return _mapper.Map<DBUsers>(source);
+        }
+
+        public static AuthModel Map(DBUsers source)
+        {
+            return _mapper.Map<AuthModel>(source);
         }
     }
 }

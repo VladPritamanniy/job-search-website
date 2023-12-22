@@ -1,25 +1,39 @@
-﻿@model JobHub.Web.Areas.Main.Models.ProductListModel
+﻿@using JobHub.Web.Helpers
+@model JobHub.Web.Areas.Main.Models.VacancyListModel
+@{
+    var companyImage = 0;
+}
 <div class="text-center">
-    <ul style="list-style-type: none;">
+    <ul style="list-style-type: none;
+               margin: 0px;
+               padding: 0px;
+               display: grid;
+               justify-content: center;">
         @if (Model != null)
         {
             @foreach (var item in Model.Items)
             {
                 <li>
-                    <a>
-                        @item.Id
-                    </a>
-                    <a>
-                        @item.Name
-                    </a>
-                    <a>
-                        @item.Price
-                    </a>
-                    <a>
-                        @item.Units
-                    </a>
+                    <div style="background-color: grey; height: 220px; width: 750px; margin-bottom: 40px; border:5px solid black">
+                        <h1>@item.Name</h1>
+                        <div style="height: 62%;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-left: 30px;">
+                            <div>@item.CompanyName</div>
+                            <div style="margin-left: 100px;">@item.CompanyLocation</div>
+                            <div style="margin-left: 300px;">@companyImage</div>
+                        </div>
+                        <div style="display: flex;">
+                            <div style="margin-left: 30px;">@item.EmploymentTypeID</div>
+                            <div style="margin-left: 420px;">@DateTimeConverter.ToString(item.PublicationDate)</div>
+                        </div>
+                    </div>
                 </li>
             }
         }
     </ul>
 </div>
+<style>
+
+</style>
