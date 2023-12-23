@@ -14,7 +14,7 @@ namespace JobHub.Web.Configuration
             _mapper = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<VacancyModel, DBVacancy>().ReverseMap();
-                cfg.CreateMap<AuthModel, DBUsers> ().ReverseMap();
+                cfg.CreateMap<UserModel, DBUsers> ().ReverseMap();
             }).CreateMapper();
         }
 
@@ -23,14 +23,14 @@ namespace JobHub.Web.Configuration
             return _mapper.Map<IEnumerable<VacancyModel>>(source);
         }
 
-        public static DBUsers Map(AuthModel source)
+        public static DBUsers Map(UserModel source)
         {
             return _mapper.Map<DBUsers>(source);
         }
 
-        public static AuthModel Map(DBUsers source)
+        public static UserModel Map(DBUsers source)
         {
-            return _mapper.Map<AuthModel>(source);
+            return _mapper.Map<UserModel>(source);
         }
     }
 }

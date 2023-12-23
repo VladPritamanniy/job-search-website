@@ -24,6 +24,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFpblxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Дипломная работа НАУ 4-й курс/Program/job-search-website/JobHub/JobHub.Web/Areas/Personal/Views/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVyc29uYWxcVmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Дипломная работа НАУ 4-й курс/Program/job-search-website/JobHub/JobHub.Web/Areas/Personal/Views/Account/FavoriteVacancies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVyc29uYWxcVmlld3NcQWNjb3VudFxGYXZvcml0ZVZhY2FuY2llcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Дипломная работа НАУ 4-й курс/Program/job-search-website/JobHub/JobHub.Web/Areas/Personal/Views/Account/Resumes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVyc29uYWxcVmlld3NcQWNjb3VudFxSZXN1bWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Дипломная работа НАУ 4-й курс/Program/job-search-website/JobHub/JobHub.Web/Areas/Personal/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVyc29uYWxcVmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -5,12 +5,40 @@
       "PackagePath": "staticwebassets\\JobHub.Web.bundle.scp.css"
     },
     {
+      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\css\\modal.css",
+      "PackagePath": "staticwebassets\\css\\modal.css"
+    },
+    {
       "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\img\\change-password.png",
+      "PackagePath": "staticwebassets\\img\\change-password.png"
+    },
+    {
+      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\img\\favorite.png",
+      "PackagePath": "staticwebassets\\img\\favorite.png"
+    },
+    {
+      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\img\\logout.png",
+      "PackagePath": "staticwebassets\\img\\logout.png"
+    },
+    {
+      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\img\\resume.png",
+      "PackagePath": "staticwebassets\\img\\resume.png"
+    },
+    {
+      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
+      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\js\\modal.js",
+      "PackagePath": "staticwebassets\\js\\modal.js"
     },
     {
       "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\js\\site.js",

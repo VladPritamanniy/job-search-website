@@ -3,8 +3,9 @@ using System.Web.Mvc;
 
 namespace JobHub.Web.Areas.Personal.Models
 {
-    public class AuthModel
+    public class UserModel
     {
+        public int ID { get; set; }
         public string Name { get; set; }
 
         [Required]
