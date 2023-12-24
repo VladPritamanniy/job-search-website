@@ -1,5 +1,3 @@
-using JobHub.Web.Helpers;
-
 namespace JobHub.Web
 {
     public class Program

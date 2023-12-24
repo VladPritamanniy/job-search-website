@@ -3,7 +3,7 @@ using System.Text;
 
 namespace JobHub.Web.Helpers
 {
-    public static class PasswordHasher
+    public static class HashPasswordHelper
     {
         public static string GenerateSalt()
         {

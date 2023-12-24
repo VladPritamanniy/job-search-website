@@ -12,24 +12,28 @@ namespace JobHub.DAL.DataQueries
             {
                 using (var session = NHibernateSessionManager.Instance.GetSession())
                 {
-                    var sql = "SELECT * FROM Users WHERE Email = :email";
-                    var query = session.CreateSQLQuery(sql)
-                        .AddEntity(typeof(DBUsers))
-                        .SetString("email", model.Email)
-                        .List();
-
-                    if (query.Count == 1)
+                    try
                     {
-                        var dbUser = query[0] as DBUsers;
-                        string hashedPassword = PasswordHasher.HashPassword(model.Password, dbUser.Salt);
+                        var query = session.Query<DBUsers>()
+                            .Where(u => u.Email == model.Email)
+                            .ToList();
 
-                        if (hashedPassword == dbUser.Password)
+                        if (query.Count == 1)
                         {
-                            return dbUser;
-                        }
-                    }
+                            string hashedPassword = HashPasswordHelper.HashPassword(model.Password, query[0].Salt);
 
-                    return null;
+                            if (hashedPassword == query[0].Password)
+                            {
+                                return query[0];
+                            }
+                        }
+
+                        return null;
+                    }
+                    catch (Exception e)
+                    {
+                        return null;
+                    }
                 }
             }
 
@@ -41,8 +45,8 @@ namespace JobHub.DAL.DataQueries
                     {
                         try
                         {
-                            string salt = PasswordHasher.GenerateSalt();
-                            string hashedPassword = PasswordHasher.HashPassword(model.Password, salt);
+                            string salt = HashPasswordHelper.GenerateSalt();
+                            string hashedPassword = HashPasswordHelper.HashPassword(model.Password, salt);
 
                             var sql = $"INSERT INTO Users (Name, Password, Salt, Email) VALUES (:name, :password, :salt, :email)";
                             var query = session.CreateSQLQuery(sql)
