@@ -6,6 +6,7 @@
     </id>
     <property name="Name" column="Name"/>
     <property name="Password" column="Password"/>
+    <property name="Salt" column="Salt"/>
     <property name="Email" column="Email"/>
   </class>
 </hibernate-mapping>

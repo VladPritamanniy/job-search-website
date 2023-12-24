@@ -1,5 +1,6 @@
 ﻿using JobHub.DAL.Data.DBObjects;
 using JobHub.DAL.Session;
+using JobHub.Web.Helpers;
 
 namespace JobHub.DAL.DataQueries
 {
@@ -11,12 +12,23 @@ namespace JobHub.DAL.DataQueries
             {
                 using (var session = NHibernateSessionManager.Instance.GetSession())
                 {
-                    var sql = "SELECT * FROM Users WHERE Email = :email and Password = :password";
-                    var query = session.CreateSQLQuery(sql).AddEntity(typeof(DBUsers)).SetString("email", model.Email).SetString("password", model.Password).List();
+                    var sql = "SELECT * FROM Users WHERE Email = :email";
+                    var query = session.CreateSQLQuery(sql)
+                        .AddEntity(typeof(DBUsers))
+                        .SetString("email", model.Email)
+                        .List();
+
                     if (query.Count == 1)
                     {
-                        return query[0] as DBUsers;
+                        var dbUser = query[0] as DBUsers;
+                        string hashedPassword = PasswordHasher.HashPassword(model.Password, dbUser.Salt);
+
+                        if (hashedPassword == dbUser.Password)
+                        {
+                            return dbUser;
+                        }
                     }
+
                     return null;
                 }
             }
@@ -29,10 +41,14 @@ namespace JobHub.DAL.DataQueries
                     {
                         try
                         {
-                            var sql = $"INSERT INTO Users (Name, Password, Email) VALUES (:name, :password, :email)";
+                            string salt = PasswordHasher.GenerateSalt();
+                            string hashedPassword = PasswordHasher.HashPassword(model.Password, salt);
+
+                            var sql = $"INSERT INTO Users (Name, Password, Salt, Email) VALUES (:name, :password, :salt, :email)";
                             var query = session.CreateSQLQuery(sql)
                                 .SetString("name", model.Name)
-                                .SetString("password", model.Password)
+                                .SetString("password", hashedPassword)
+                                .SetString("salt", salt)
                                 .SetString("email", model.Email);
 
                             query.ExecuteUpdate();
