@@ -1,6 +1,7 @@
 ﻿using JobHub.BLL.WrapperQuery;
 using JobHub.Web.Areas.Personal.Models;
 using JobHub.Web.Configuration;
+using JobHub.Web.Helpers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JobHub.Web.Areas.Personal.Controllers
@@ -25,9 +26,9 @@ namespace JobHub.Web.Areas.Personal.Controllers
             var user = Mapper.Map(userModel);
             if (user != null)
             {
-                HttpContext.Response.Cookies.Append("userName", user.Name);
-                HttpContext.Response.Cookies.Append("userEmail", user.Email);
-                HttpContext.Response.Cookies.Append("userID", user.ID.ToString());
+                HttpContext.Response.Cookies.Append("userName", CryptographyHelper.Encrypt(user.Name));
+                HttpContext.Response.Cookies.Append("userEmail", CryptographyHelper.Encrypt(user.Email));
+                HttpContext.Response.Cookies.Append("userID", CryptographyHelper.Encrypt(user.ID.ToString()));
                 return Redirect("/");
             }
             return View("~/Areas/Personal/Views/Auth/Login.cshtml");
@@ -38,17 +39,17 @@ namespace JobHub.Web.Areas.Personal.Controllers
         {
             var userModel = Mapper.Map(model);
             WrapperQuery.WrapperAuth.WritePasswordCredential(userModel);
-            HttpContext.Response.Cookies.Append("userName", model.Name);
-            HttpContext.Response.Cookies.Append("userEmail", model.Email);
-            HttpContext.Response.Cookies.Append("userID", model.ID.ToString());
+            HttpContext.Response.Cookies.Append("userName", CryptographyHelper.Encrypt(model.Name));
+            HttpContext.Response.Cookies.Append("userEmail", CryptographyHelper.Encrypt(model.Email));
+            HttpContext.Response.Cookies.Append("userID", CryptographyHelper.Encrypt(model.ID.ToString()));
             return Redirect("/");
         }
 
         public RedirectResult SignOut()
         {
-            HttpContext.Response.Cookies.Append("userName", string.Empty);
-            HttpContext.Response.Cookies.Append("userEmail", string.Empty);
-            HttpContext.Response.Cookies.Append("userID", string.Empty);
+            Response.Cookies.Delete("userName");
+            Response.Cookies.Delete("userEmail");
+            Response.Cookies.Delete("userID");
             return Redirect("/");
         }
     }

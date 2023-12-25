@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "G2kHSLzpd5Nwa/Vv1oOKK2MTYx+xb3ox5FXOAh9eDaLSujjleZ6meJpy4u5E7Q/gCjNJE2onPBAVNX52Iw9mJw==",
+  "dgSpecHash": "IYSa8NlpBlaWoU0WMcRWV1oDmlppPum4sEfaDNqizyjMJmVwETiItJt+zc9JZk1K/b7LMKJ7bc0FcBbK2PB9EA==",
   "success": true,
   "projectFilePath": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\JobHub.Web.csproj",
   "expectedPackageFiles": [
@@ -241,7 +241,7 @@
     "C:\\Users\\vlad\\.nuget\\packages\\system.security.cryptography.openssl\\4.3.0\\system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\vlad\\.nuget\\packages\\system.security.cryptography.pkcs\\5.0.0\\system.security.cryptography.pkcs.5.0.0.nupkg.sha512",
     "C:\\Users\\vlad\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\system.security.cryptography.primitives.4.3.0.nupkg.sha512",
-    "C:\\Users\\vlad\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\vlad\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
     "C:\\Users\\vlad\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
     "C:\\Users\\vlad\\.nuget\\packages\\system.security.cryptography.xml\\4.5.0\\system.security.cryptography.xml.4.5.0.nupkg.sha512",
     "C:\\Users\\vlad\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
