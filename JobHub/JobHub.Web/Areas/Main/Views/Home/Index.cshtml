@@ -1,36 +1,143 @@
-﻿@using JobHub.Web.Helpers
+﻿@using System.ComponentModel
+@using JobHub.Web.Helpers
 @model JobHub.Web.Areas.Main.Models.VacancyListModel
 @{
     var companyImage = 0;
 }
+@functions {
+    string GetDescription<T>(T id)
+    {
+        var field = typeof(T).GetField(id.ToString());
+        var attribute = (DescriptionAttribute)Attribute.GetCustomAttribute(field, typeof(DescriptionAttribute));
+        return attribute.Description;
+    }
+}
 <div class="text-center">
-    <ul style="list-style-type: none;
-               margin: 0px;
-               padding: 0px;
-               display: grid;
-               justify-content: center;">
-        @if (Model != null)
+    <ul class="vacancy-list">
+        @if (Model.Items.Any())
         {
             @foreach (var item in Model.Items)
             {
-                <li>
-                    <div style="background-color: grey; height: 220px; width: 750px; margin-bottom: 40px; border:5px solid black">
-                        <h1>@item.Name</h1>
-                        <div style="height: 62%;
-                                    display: flex;
-                                    align-items: center;
-                                    margin-left: 30px;">
-                            <div>@item.CompanyName</div>
-                            <div style="margin-left: 100px;">@item.CompanyLocation</div>
-                            <div style="margin-left: 300px;">@companyImage</div>
+                @if (item.IsPublished)
+                {
+                    <li class="vacancy-item">
+                        <a class="vacancy-name" href="@Url.Action("Vacancy", "Info", new {@id = item.ID})">@item.Name</a>
+                        <div class="item-container">
+                            <div class="company-name">@item.CompanyName</div>
+                            @if (item.CompanyLocation != null)
+                            {
+                                <div class="company-location">@item.CompanyLocation</div>
+                            }
+                            @if (companyImage != null)
+                            {
+                                <div class="company-image">@companyImage</div>
+                            }
                         </div>
-                        <div style="display: flex;">
-                            <div style="margin-left: 30px;">@item.EmploymentTypeID</div>
-                            <div style="margin-left: 420px;">@DateTimeConverterHelper.ToString(item.PublicationDate)</div>
+                        <div class="item-footer">
+                            @if (item.SalaryFrom != null)
+                            {
+                                if (item.SalaryTo != null)
+                                {
+                                    <div class="additional-info-item">
+                                        @item.SalaryFrom - @item.SalaryTo @GetDescription(item.CurrencyID)
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="additional-info-item">
+                                        @item.SalaryFrom @GetDescription(item.CurrencyID)
+                                    </div>
+                                }
+                            }
+                            @if (item.EmploymentTypeID != null)
+                            {
+                                <div class="additional-info-item">
+                                    @GetDescription(item.EmploymentTypeID)
+                                </div>
+                            }
+                            <div class="publication-date">@DateTimeConverterHelper.ToString(item.PublicationDate)</div>
                         </div>
-                    </div>
-                </li>
+                    </li>
+                }
             }
         }
     </ul>
 </div>
+<style>
+    .vacancy-list {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .vacancy-item {
+        background-color: white;
+        height: 180px;
+        width: 750px;
+        margin-bottom: 40px;
+        box-shadow: 0 10px 10px #0505060d;
+    }
+
+    .vacancy-item > .item-container {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        margin-top: 25px;
+    }
+
+    .vacancy-name {
+        font-size: 25px;
+        font-weight: 600;
+        color: black;
+        text-decoration: none;
+    }
+
+    .vacancy-name:hover {
+        color: black;
+    }
+
+    .company-name {
+        display: flex;
+        width: 200px;
+    }
+
+    .company-location {
+        width: 200px;
+        display: flex;
+    }
+
+    .company-image {
+        width: 100%;
+    }
+
+    .item-footer {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .additional-info-item {
+        margin-left: 30px;
+        background-color: #f2f5f8;
+        border-radius: 5px;
+        font-family: Graphik Regular,sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: calc(10px / 2) 10px;
+        white-space: nowrap;
+    }
+
+    .publication-date {
+        justify-content: end;
+        display: flex;
+        width: 100%;
+        padding-right: 20px;
+    }
+</style>

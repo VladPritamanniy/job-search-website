@@ -7,9 +7,14 @@ namespace JobHub.BLL.WrapperQuery
     {
         public static class WrapperVacancy
         {
-            public static IEnumerable<DBVacancy> GetVacancy()
+            public static IEnumerable<DBVacancy> GetList()
             {
-                return DataQuery.VacancyQuery.GetVacancy();
+                return DataQuery.VacancyQuery.GetList();
+            }
+
+            public static DBVacancy GetItem(int id)
+            {
+                return DataQuery.VacancyQuery.GetItem(id);
             }
 
         }

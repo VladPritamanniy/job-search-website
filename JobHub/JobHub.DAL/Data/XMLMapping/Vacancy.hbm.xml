@@ -6,8 +6,9 @@
     </id>
     <property name="Name" column="Name"/>
     <property name="Description" column="Description"/>
+    <property name="CompanyID" column="CompanyID"/>
     <property name="CompanyName" column="CompanyName"/>
-    <property name="CompanyImage" column="CompanyImage"/>
+    <property name="CompanyLogo" column="CompanyLogo"/>
     <property name="SalaryFrom" column="SalaryFrom"/>
     <property name="SalaryTo" column="SalaryTo"/>
     <property name="CurrencyID" column="CurrencyID"/>

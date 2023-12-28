@@ -5,8 +5,9 @@
         public virtual int ID { get; set; }
         public virtual string Name { get; set; }
         public virtual string Description { get; set; }
+        public virtual int CompanyID { get; set; }
         public virtual string CompanyName { get; set; }
-        public virtual byte[] CompanyImage { get; set; }
+        public virtual byte[] CompanyLogo { get; set; }
         public virtual int SalaryFrom { get; set; }
         public virtual int SalaryTo { get; set; }
         public virtual int CurrencyID { get; set; }

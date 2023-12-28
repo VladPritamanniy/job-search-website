@@ -20,7 +20,7 @@ namespace JobHub.Web.Areas.Main.Controllers
 
         public IActionResult Index()
         {
-            var vacancies = WrapperQuery.WrapperVacancy.GetVacancy();
+            var vacancies = WrapperQuery.WrapperVacancy.GetList();
             var vacanciesMap = Mapper.Map(vacancies);
             var vacanciesList = new VacancyListModel() { Items = vacanciesMap };
             return View("~/Areas/Main/Views/Home/Index.cshtml", vacanciesList);

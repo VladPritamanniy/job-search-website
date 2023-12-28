@@ -23,6 +23,11 @@ namespace JobHub.Web.Configuration
             return _mapper.Map<IEnumerable<VacancyModel>>(source);
         }
 
+        public static VacancyModel Map(DBVacancy source)
+        {
+            return _mapper.Map<VacancyModel>(source);
+        }
+
         public static DBUsers Map(UserModel source)
         {
             return _mapper.Map<DBUsers>(source);

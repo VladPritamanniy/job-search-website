@@ -1,0 +1,99 @@
+﻿@using System.ComponentModel
+@using JobHub.Web.Helpers
+@model JobHub.Web.Areas.Main.Models.VacancyModel
+@{
+    var companyImage = 0;
+}
+@functions {
+    string GetDescription<T>(T id)
+    {
+        var field = typeof(T).GetField(id.ToString());
+        var attribute = (DescriptionAttribute)Attribute.GetCustomAttribute(field, typeof(DescriptionAttribute));
+        return attribute.Description;
+    }
+}
+<div class="vacancy-info">
+    <div class="vacancy-info-container">
+        <div class="vacancy-info-name">
+            <h1>@Model.Name</h1>
+            @if (companyImage != null)
+            {
+                <div class="company-image">@companyImage</div>
+            }
+        </div>
+
+        <div class="vacancy-info-company-name-container">
+            <div class="company-name">@Model.CompanyName</div>
+            @if (Model.CompanyLocation != null)
+            {
+                <div class="company-location">@Model.CompanyLocation</div>
+            }
+            <div class="publication-date">@DateTimeConverterHelper.ToString(Model.PublicationDate)</div>
+        </div>
+
+        <div style="display: flex; padding: 10px;">
+            @if (Model.SalaryFrom != null)
+            {
+                if (Model.SalaryTo != null)
+                {
+                    <div class="additional-info-item">
+                        @Model.SalaryFrom - @Model.SalaryTo @GetDescription(Model.CurrencyID)
+                    </div>
+                }
+                else
+                {
+                    <div class="additional-info-item">
+                        @Model.SalaryFrom @GetDescription(Model.CurrencyID)
+                    </div>
+                }
+            }
+            @if (Model.EmploymentTypeID != null)
+            {
+                <div class="additional-info-item">
+                    @GetDescription(Model.EmploymentTypeID)
+                </div>
+            }
+        </div>
+        <div>
+            @Model.Description
+        </div>
+
+    </div>
+</div>
+<style>
+    .vacancy-info {
+        display: block;
+        background-color: white;
+        box-shadow: 0 10px 10px #0505060d;
+    }
+
+    .vacancy-info-container {
+        padding: 20px;
+    }
+
+    .vacancy-info-name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .vacancy-info-company-name-container {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .additional-info-item {
+        background-color: #f2f5f8;
+        border-radius: 5px;
+        font-family: Graphik Regular,sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: calc(10px / 2) 10px;
+        white-space: nowrap;
+    }
+</style>

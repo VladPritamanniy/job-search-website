@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "R3MbJZi59nC6eEA22kMMaQBARQqdYpkKmUIxxGkPMFM=",
+  "Hash": "J1+Z3LCldp51blLfl9bjrpvp72/8Ik9pT4ATfmEjSK4=",
   "Source": "JobHub.Web",
   "BasePath": "_content/JobHub.Web",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\favorite.png"
+    },
+    {
+      "Identity": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\img\\logo.jpg",
+      "SourceId": "JobHub.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\",
+      "BasePath": "_content/JobHub.Web",
+      "RelativePath": "img/logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo.jpg"
     },
     {
       "Identity": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\img\\logout.png",

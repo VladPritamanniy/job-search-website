@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\img\\favorite.png"
     },
     {
+      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\img\\logo.jpg",
+      "PackagePath": "staticwebassets\\img\\logo.jpg"
+    },
+    {
       "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\img\\logout.png",
       "PackagePath": "staticwebassets\\img\\logout.png"
     },
