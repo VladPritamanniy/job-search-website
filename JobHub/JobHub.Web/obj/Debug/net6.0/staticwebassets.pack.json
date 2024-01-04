@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\JobHub.Web.bundle.scp.css"
     },
     {
-      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\css\\modal.css",
-      "PackagePath": "staticwebassets\\css\\modal.css"
+      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
-      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\css\\main.min.css",
+      "PackagePath": "staticwebassets\\css\\main.min.css"
+    },
+    {
+      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\css\\main.scss",
+      "PackagePath": "staticwebassets\\css\\main.scss"
+    },
+    {
+      "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\css\\modal.css",
+      "PackagePath": "staticwebassets\\css\\modal.css"
     },
     {
       "Id": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website\\JobHub\\JobHub.Web\\wwwroot\\favicon.ico",

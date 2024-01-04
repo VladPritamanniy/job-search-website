@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\JobHub.BLL\JobHub.BLL.csproj" />
     <ProjectReference Include="..\JobHub.DAL\JobHub.DAL.csproj" />
   </ItemGroup>
