@@ -1,0 +1,12 @@
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\bin\Debug\net8.0\JobSearch.DLL.deps.json
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\bin\Debug\net8.0\JobSearch.DLL.dll
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\bin\Debug\net8.0\JobSearch.DLL.pdb
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\obj\Debug\net8.0\JobSearch.DLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\obj\Debug\net8.0\JobSearch.DLL.AssemblyInfoInputs.cache
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\obj\Debug\net8.0\JobSearch.DLL.AssemblyInfo.cs
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\obj\Debug\net8.0\JobSearch.DLL.csproj.CoreCompileInputs.cache
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\obj\Debug\net8.0\JobSearch.DLL.dll
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\obj\Debug\net8.0\refint\JobSearch.DLL.dll
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\obj\Debug\net8.0\JobSearch.DLL.pdb
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\obj\Debug\net8.0\ref\JobSearch.DLL.dll
+D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\obj\Debug\net8.0\JobSearch.DLL.csproj.AssemblyReference.cache

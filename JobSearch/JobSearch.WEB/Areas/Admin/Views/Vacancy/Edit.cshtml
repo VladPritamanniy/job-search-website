@@ -1,0 +1,45 @@
+﻿@using JobSearch.WEB.Models.Enums
+@model JobSearch.WEB.Areas.Admin.Models.VacancyViewModel
+
+@using (Html.BeginForm("Save", "Vacancy", FormMethod.Post, htmlAttributes : new { @class = "form-edit"} ))
+{
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.PublicationDate)
+    <div class="form-group">
+        <lable>@Resources.Resource.Lable_Title</lable>
+        @Html.EditorFor(m => m.Title, new { htmlAttributes = new { @class = "form-control", @placeholder = @Resources.Resource.Lable_Title } })
+        @Html.ValidationMessageFor(m => m.Title)
+    </div>
+    <div class="form-group">
+        <lable>@Resources.Resource.Lable_Description</lable>
+        @Html.TextAreaFor(m => m.Description, new { @id="tiny", @class = "form-control", @placeholder = @Resources.Resource.Lable_Description })
+        @Html.ValidationMessageFor(m => m.Description)
+    </div>
+    <div class="form-group">
+        <lable>@Resources.Resource.Lable_WorkFormat</lable>
+        <select asp-for="FormatId"
+                class="form-select"
+                asp-items="Html.GetEnumSelectList<WorkFormatEnum>()">
+        </select>
+    </div>
+    <div class="form-group">
+        <lable>@Resources.Resource.Lable_Experience</lable>
+        <select asp-for="ExperienceId"
+                class="form-select"
+                asp-items="Html.GetEnumSelectList<ExperienceEnum>()">
+        </select>
+    </div>
+    <div class="form-group">
+        <lable>@Resources.Resource.Lable_EmploymentType</lable>
+        <select asp-for="EmploymentTypeId"
+                class="form-select"
+                asp-items="Html.GetEnumSelectList<EmploymentTypeEnum>()">
+        </select>
+    </div>
+    <div class="form-group check-box-published">
+        @Html.CheckBoxFor(m => m.IsPublished)
+        <label>@Resources.Resource.Lable_IsPublished</label>
+    </div>
+
+    <p><input class="btn btn-success" type="submit" value="@Resources.Resource.Lable_Save"></p>
+}

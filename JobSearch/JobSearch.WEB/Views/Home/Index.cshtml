@@ -1,0 +1,43 @@
+﻿@using System.Text.RegularExpressions
+@using Humanizer
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model JobSearch.WEB.ViewModels.VacancyListViewModel
+@{
+    var vacancies = Model.Items.Where(m=>m.IsPublished);
+}
+
+<div class="text-center">
+    <div class="container">
+        <div class="navigation"></div>
+        <ul class="vacancies-list">
+            @foreach (var vacancy in vacancies)
+            {
+                <li class="vacancy-container">
+                    <div>
+                        <h5><a>@vacancy.Title</a></h5>
+                        <ul class="search-labels">
+                            <li>@vacancy.EmploymentTypeId.Humanize()</li>
+                            <li>@vacancy.ExperienceId.Humanize()</li>
+                            <li>@vacancy.FormatId.Humanize()</li>
+                        </ul>
+                    </div>
+                    <p class="vacancy-description">
+                        @Regex.Replace(vacancy.Description, "<.*?>", String.Empty)
+                    </p>
+                    <form asp-controller="Info" asp-action="Details" asp-route-Id="@vacancy.Id" method="get">
+                        <button type="submit" class="btn btn-info">@Resources.Resource.Button_ViewAndRespond</button>
+                    </form>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+<script>
+    let descriptions = document.querySelectorAll('.vacancy-description');
+    descriptions.forEach(function (description) {
+        if (description.textContent.length > 450) {
+            description.textContent = description.textContent.substring(0, 450) + '...';
+        }
+    });
+</script>

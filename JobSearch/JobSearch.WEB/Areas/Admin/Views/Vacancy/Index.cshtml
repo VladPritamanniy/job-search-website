@@ -1,0 +1,66 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model JobSearch.WEB.ViewModels.VacancyListViewModel
+@{
+    int vacancyCounter = 1;
+}
+
+<div class="btn btn-primary btn-create">@Html.ActionLink(@Resources.Resource.Lable_CreateVacancy, "Edit", "Vacancy", htmlAttributes: new { @class = "admin-lable" })</div>
+<table class="table table-bordered table-striped table-vacancy">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>ID</th>
+            <th>@Resources.Resource.Lable_Title</th>
+            <th>@Resources.Resource.Lable_Description</th>
+            <th>@Resources.Resource.Lable_IsPublished</th>
+            <th>@Resources.Resource.Lable_PublicationDate</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+    @if (Model?.Items != null)
+    {
+        foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@vacancyCounter</td>
+                <td>@item.Id</td>
+                <td>@item.Title</td>
+                <td class="vacancy-description">@item.Description</td>
+                <td>@item.IsPublished</td>
+                <td>@item.PublicationDate</td>
+                <td>
+                    <ul class="vacancy-action-buttons">
+                        <li>
+                            <form asp-controller="Vacancy" asp-action="GetResponsesById" asp-area="Admin" asp-route-Id="@item.Id" method="get">
+                                    <button type="submit" class="btn btn-info">@Resources.Resource.Button_Reviews</button>
+                            </form>
+                        </li>
+                        <li>
+                            <form asp-controller="Vacancy" asp-action="Edit" asp-area="Admin" asp-route-Id="@item.Id">
+                                <button type="submit" class="btn btn-success">@Resources.Resource.Lable_Edit</button>
+                            </form>
+                        </li>
+                        <li>
+                            <form asp-controller="Vacancy" asp-action="Delete" asp-area="Admin" asp-route-Id="@item.Id">
+                                <input type="submit" class="btn btn-danger" value="@Resources.Resource.Lable_Delete"/>
+                            </form>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            vacancyCounter++;
+        }
+    }
+    </tbody>
+</table>
+
+<script>
+    let descriptions = document.querySelectorAll('.vacancy-description');
+    descriptions.forEach(function(description) {
+        if (description.textContent.length > 200) {
+            description.textContent = description.textContent.substring(0, 200) + '...';
+        }
+    });
+</script>

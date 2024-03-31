@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model JobSearch.WEB.ViewModels.VacancyDetailsViewModel;
+
+@using (Html.BeginForm("SendResponse", "Info", FormMethod.Post, htmlAttributes: new { enctype = "multipart/form-data" }))
+{
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.Title)
+    @Html.HiddenFor(m => m.Description)
+    <div class="vacancy-details-container">
+        <h1>@Model.Title</h1>
+        <div class="vacancy-details-area">
+            <div class="vacancy-details-description">@Html.Raw(Model.Description)</div>
+            <div class="vacancy-apply-container">
+                <label>@Resources.Resource.Lable_RespondToTheVacancy</label>
+                <div class="form-group">
+                    <input type="text" asp-for="Response.FName" placeholder="@Resources.Resource.Lable_Name" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.Response.FName)
+                </div>
+                <div class="form-group">
+                    <input type="text" asp-for="Response.LName" placeholder="@Resources.Resource.Lable_Surname" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.Response.LName)
+                </div>
+                <div class="form-group">
+                    <input type="file" asp-for="Response.Resume" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.Response.LName)
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="@Resources.Resource.Lable_CoverLetter" class="form-control" asp-for="Response.CoverLetter"></textarea>
+                    @Html.ValidationMessageFor(m => m.Response.CoverLetter)
+                </div>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <input type="submit" class="btn btn-primary" value="@Resources.Resource.Button_Respond" />
+            </div>
+        </div>
+    </div>
+}

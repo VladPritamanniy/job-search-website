@@ -1,0 +1,218 @@
+﻿html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+h1 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+h5 {
+    a {
+        display: flex;
+        text-align: left;
+    }
+}
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.admin-lable {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.vacancy-action-buttons {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.form-edit {
+    display: grid;
+    width: 50%;
+    min-width: 300px;
+    margin: 40px;
+    gap: 25px;
+    border: 1px solid darkgrey;
+    border-radius: 3px;
+    padding: 20px;
+}
+.table-vacancy {
+    width: 70%;
+    margin: 30px;
+
+    thead {
+        background: lightskyblue;
+    }
+}
+.btn-create {
+    margin:20px;
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight:400;
+    }
+}
+.form-login {
+    display: grid;
+    width: 50%;
+    margin: 40px;
+    gap: 20px;
+    border: 1px solid darkgrey;
+    border-radius: 3px;
+    padding: 20px;
+}
+.field-validation-error{
+    color:red;
+}
+.validation-summary-errors {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            color: red;
+        }
+    }
+}
+.check-box-published {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    input {
+        height: 20px;
+        width: 20px;
+    }
+}
+.vacancies-list {
+    li {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.btn-info {
+    color: white;
+
+    &:hover {
+        color: white !important;
+    }
+}
+.search-labels {
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+    display: flex;
+
+    li {
+        width: max-content;
+        background: skyblue;
+        border: 1px solid skyblue;
+        border-radius: 4px;
+        padding: 2px;
+        color: white;
+        margin: 4px;
+    }
+}
+.vacancy-container {
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+
+    div {
+        min-width: 25%;
+        padding: 55px 50px 55px 0px;
+    }
+
+    p {
+        min-width: 60%;
+    }
+
+    form {
+        padding: 55px 50px 55px 0px;
+
+        button {
+            width: 180px
+        }
+    }
+}
+.vacancy-description{
+    text-align: left;
+    padding: 55px 50px 55px 0px;
+}
+.tox-tinymce{
+    height: 700px !important;
+}
+.vacancy-details-area{
+    display: flex;
+    gap: 5%;
+}
+.vacancy-apply-container {
+    width: 30%;
+
+    .form-group {
+        padding-bottom: 20px;
+    }
+
+    label {
+        color: rgb(118, 205, 216);
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 160px;
+        resize: none;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+.dropdown-menu {
+    top: 40px;
+    right: 0px;
+}
+
+.container-fluid {
+    justify-content: center !important;
+}
+
+footer {
+    height: 50px;
+    background-color: slategrey !important;
+
+    .container {
+        color: white;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+.navbar {
+    height: 90px;
+    background-color: lightgrey !important;
+}
+.table-responses {
+    width: 60%;
+    margin: 40px;
+
+    thead {
+        background: cadetblue;
+    }
+}
+.vacancy-details-description {
+    width: 70%;
+}

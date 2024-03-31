@@ -1,0 +1,192 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u043D\u0430\u0443 4-\u0439 \u043A\u0443\u0440\u0441\\program\\job-search-website-entity\\jobsearch\\jobsearch.web\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u043D\u0430\u0443 4-\u0439 \u043A\u0443\u0440\u0441\\program\\job-search-website-entity\\jobsearch\\jobsearch.web\\areas\\admin\\views\\vacancy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\areas\\admin\\views\\vacancy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u043D\u0430\u0443 4-\u0439 \u043A\u0443\u0440\u0441\\program\\job-search-website-entity\\jobsearch\\jobsearch.web\\viewmodels\\vacancyresponseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\viewmodels\\vacancyresponseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u043D\u0430\u0443 4-\u0439 \u043A\u0443\u0440\u0441\\program\\job-search-website-entity\\jobsearch\\jobsearch.web\\areas\\admin\\models\\vacancyresponseadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\areas\\admin\\models\\vacancyresponseadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u043D\u0430\u0443 4-\u0439 \u043A\u0443\u0440\u0441\\program\\job-search-website-entity\\jobsearch\\jobsearch.web\\wwwroot\\css\\style.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\wwwroot\\css\\style.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u043D\u0430\u0443 4-\u0439 \u043A\u0443\u0440\u0441\\program\\job-search-website-entity\\jobsearch\\jobsearch.web\\resources\\resource.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\resources\\resource.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u043D\u0430\u0443 4-\u0439 \u043A\u0443\u0440\u0441\\program\\job-search-website-entity\\jobsearch\\jobsearch.web\\resources\\resource.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\resources\\resource.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u043D\u0430\u0443 4-\u0439 \u043A\u0443\u0440\u0441\\program\\job-search-website-entity\\jobsearch\\jobsearch.web\\resources\\resource.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\resources\\resource.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 255,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Resource.resx",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\Resources\\Resource.resx",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\Resources\\Resource.resx",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\Resources\\Resource.resx",
+              "RelativeToolTip": "JobSearch.WEB\\Resources\\Resource.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-31T12:24:54.342Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Resource.ru.resx",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\Resources\\Resource.ru.resx",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\Resources\\Resource.ru.resx",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\Resources\\Resource.ru.resx",
+              "RelativeToolTip": "JobSearch.WEB\\Resources\\Resource.ru.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-31T12:24:55.55Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Resource.en.resx",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\Resources\\Resource.en.resx",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\Resources\\Resource.en.resx",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\Resources\\Resource.en.resx",
+              "RelativeToolTip": "JobSearch.WEB\\Resources\\Resource.en.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-31T12:24:56.374Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InfoController.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\Controllers\\InfoController.cs",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\Controllers\\InfoController.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\Controllers\\InfoController.cs",
+              "RelativeToolTip": "JobSearch.WEB\\Controllers\\InfoController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T12:41:03.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\Index.cshtml",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\Index.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\Index.cshtml",
+              "RelativeToolTip": "JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-31T12:45:24.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VacancyResponseViewModel.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\ViewModels\\VacancyResponseViewModel.cs",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\ViewModels\\VacancyResponseViewModel.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\ViewModels\\VacancyResponseViewModel.cs",
+              "RelativeToolTip": "JobSearch.WEB\\ViewModels\\VacancyResponseViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T12:47:53.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VacancyResponseAdminViewModel.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Models\\VacancyResponseAdminViewModel.cs",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\Areas\\Admin\\Models\\VacancyResponseAdminViewModel.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Models\\VacancyResponseAdminViewModel.cs",
+              "RelativeToolTip": "JobSearch.WEB\\Areas\\Admin\\Models\\VacancyResponseAdminViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T12:48:08.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "style.scss",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\wwwroot\\css\\style.scss",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\wwwroot\\css\\style.scss",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u041D\u0410\u0423 4-\u0439 \u043A\u0443\u0440\u0441\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\wwwroot\\css\\style.scss",
+              "RelativeToolTip": "JobSearch.WEB\\wwwroot\\css\\style.scss",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAtwG0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2024-03-31T12:55:24.928Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
