@@ -160,6 +160,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Гібридний формат.
+        /// </summary>
+        public static string HybridFormat {
+            get {
+                return ResourceManager.GetString("HybridFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Стажування.
         /// </summary>
         public static string Internship {

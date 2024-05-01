@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using JobSearch.BLL.DTO;
-using JobSearch.DLL.Entities;
+using JobSearch.DLL.EfClasses;
 using JobSearch.WEB.Areas.Admin.Models;
 using JobSearch.WEB.Models;
 using JobSearch.WEB.ViewModels;
@@ -11,20 +11,20 @@ namespace JobSearch.WEB.Mapper
     {
         public AutoMapperProfile()
         {
-            CreateMap<UserEntity, User>().ReverseMap();
+            CreateMap<User, UserDto>().ReverseMap();
 
-            CreateMap<VacancyEntity, Vacancy>().ReverseMap();
-            CreateMap<VacancyModel, Vacancy>().ReverseMap();
+            CreateMap<Vacancy, VacancyDto>().ReverseMap();
+            CreateMap<VacancyModel, VacancyDto>().ReverseMap();
 
-            CreateMap<VacancyModel, Vacancy>().ReverseMap();
+            CreateMap<VacancyModel, VacancyDto>().ReverseMap();
             CreateMap<VacancyModel, VacancyViewModel>().ReverseMap();
             CreateMap<VacancyDetailsViewModel, VacancyModel>().ReverseMap();
 
-            CreateMap<VacancyResponseModel, VacancyResponse>().ReverseMap();
+            CreateMap<VacancyResponseModel, VacancyResponseDto>().ReverseMap();
 
-            CreateMap<VacancyResponse, VacancyResponseEntity>().ReverseMap();
+            CreateMap<VacancyResponseDto, VacancyResponse>().ReverseMap();
 
-            CreateMap<VacancyResponse, VacancyResponseAdminViewModel>().ReverseMap();
+            CreateMap<VacancyResponseDto, VacancyResponseAdminViewModel>().ReverseMap();
         }
     }
 }

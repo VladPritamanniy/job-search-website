@@ -11,6 +11,8 @@ namespace JobSearch.WEB.Models.Enums
         [Display(ResourceType = typeof(Resources.Resource), Name = "RemoteWork")]
         RemoteWork = 1,
         [Display(ResourceType = typeof(Resources.Resource), Name = "OfficeWork")]
-        OfficeWork = 2
+        OfficeWork = 2,
+        [Display(ResourceType = typeof(Resources.Resource), Name = "HybridFormat")]
+        HybridFormat = 3
     }
 }

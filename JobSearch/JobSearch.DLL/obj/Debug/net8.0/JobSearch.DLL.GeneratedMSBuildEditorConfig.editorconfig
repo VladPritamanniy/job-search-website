@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = JobSearch.DLL
-build_property.ProjectDir = D:\Дипломная работа НАУ 4-й курс\Program\job-search-website-entity\JobSearch\JobSearch.DLL\
+build_property.ProjectDir = D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.DLL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

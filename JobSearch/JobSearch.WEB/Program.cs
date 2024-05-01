@@ -10,6 +10,7 @@ using JobSearch.DLL.Context;
 using JobSearch.DLL.Interfaces;
 using JobSearch.DLL.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 
@@ -35,7 +36,11 @@ namespace JobSearch.WEB
             services.Configure<JwtOptions>(builder.Configuration.GetSection(nameof(JwtOptions)));
 
             services.AddControllersWithViews();
-			services.AddDbContext<JobSearchContext>();
+
+            var connection = builder.Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<JobSearchContext>
+                (options => options.UseSqlServer(connection));
+
             services.AddAutoMapper(typeof(AutoMapperProfile));
 
 			// DI

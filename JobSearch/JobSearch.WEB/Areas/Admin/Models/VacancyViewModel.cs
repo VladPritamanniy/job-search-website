@@ -5,7 +5,7 @@ namespace JobSearch.WEB.Areas.Admin.Models
 {
     public class VacancyViewModel
     {
-        public int Id { get; set; }
+        public int VacancyId { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(Resources.Resource), ErrorMessageResourceName = "Error_RequiredField")]
         [DataType(DataType.Text)]

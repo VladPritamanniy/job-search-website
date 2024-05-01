@@ -23,11 +23,9 @@ namespace JobSearch.WEB.Areas.Admin.Controllers
 			return View();
 		}
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(UserViewModel userModel)
         {
-            await _userService.Register(userModel.Email, userModel.Password);
+            await _userService.Register("admin@gmail.com", "qwerty");
             return View("Index");
         }
 

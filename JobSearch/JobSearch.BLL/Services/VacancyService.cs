@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using JobSearch.BLL.DTO;
 using JobSearch.BLL.Interfaces;
-using JobSearch.DLL.Entities;
+using JobSearch.DLL.EfClasses;
 using JobSearch.DLL.Interfaces;
 
 namespace JobSearch.BLL.Services
@@ -17,15 +17,15 @@ namespace JobSearch.BLL.Services
             _vacancyRepository = vacancyRepository;
         }
 
-        public async Task<Vacancy> Get(int id)
+        public async Task<VacancyDto> Get(int id)
         {
             var vacancy = await _vacancyRepository.GetById(id);
-            return _mapper.Map<Vacancy>(vacancy);
+            return _mapper.Map<VacancyDto>(vacancy);
         }
 
-        public async Task Create(Vacancy vacancy)
+        public async Task Create(VacancyDto vacancyDto)
         {
-            await _vacancyRepository.Add(_mapper.Map<VacancyEntity>(vacancy));
+            await _vacancyRepository.Add(_mapper.Map<Vacancy>(vacancyDto));
         }
 
         public async Task Delete(int id)
@@ -33,21 +33,21 @@ namespace JobSearch.BLL.Services
             await _vacancyRepository.Delete(id);
         }
 
-        public async Task<IEnumerable<Vacancy>> GetAll()
+        public async Task<IEnumerable<VacancyDto>> GetAll()
         {
             var vacancies = await _vacancyRepository.GetAll();
-            return _mapper.Map<IEnumerable<Vacancy>>(vacancies);
+            return _mapper.Map<IEnumerable<VacancyDto>>(vacancies);
         }
 
-        public async Task AddResponse(VacancyResponse response)
+        public async Task AddResponse(VacancyResponseDto responseDto)
         {
-            await _vacancyRepository.AddResponse(_mapper.Map<VacancyResponseEntity>(response));
+            await _vacancyRepository.AddResponse(_mapper.Map<VacancyResponse>(responseDto));
         }
 
-        public async Task<IEnumerable<VacancyResponse>> GetResponsesByVacancyId(int id)
+        public async Task<IEnumerable<VacancyResponseDto>> GetResponsesByVacancyId(int id)
         {
             var responses = await _vacancyRepository.GetResponsesByVacancyId(id);
-            return _mapper.Map<IEnumerable<VacancyResponse>>(responses);
+            return _mapper.Map<IEnumerable<VacancyResponseDto>>(responses);
         }
 
         public async Task<byte[]> GetResumeById(int id)

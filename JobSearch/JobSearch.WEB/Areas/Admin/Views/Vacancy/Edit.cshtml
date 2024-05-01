@@ -3,7 +3,7 @@
 
 @using (Html.BeginForm("Save", "Vacancy", FormMethod.Post, htmlAttributes : new { @class = "form-edit"} ))
 {
-    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.VacancyId)
     @Html.HiddenFor(m => m.PublicationDate)
     <div class="form-group">
         <lable>@Resources.Resource.Lable_Title</lable>

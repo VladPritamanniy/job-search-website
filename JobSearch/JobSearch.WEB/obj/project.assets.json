@@ -8516,11 +8516,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\JobSearch.WEB.csproj",
+      "projectUniqueName": "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\JobSearch.WEB.csproj",
       "projectName": "JobSearch.WEB",
-      "projectPath": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\JobSearch.WEB.csproj",
+      "projectPath": "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\JobSearch.WEB.csproj",
       "packagesPath": "C:\\Users\\vlad\\.nuget\\packages\\",
-      "outputPath": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website-entity\\JobSearch\\JobSearch.WEB\\obj\\",
+      "outputPath": "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8542,11 +8542,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website-entity\\JobSearch\\JobSearch.BLL\\JobSearch.BLL.csproj": {
-              "projectPath": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website-entity\\JobSearch\\JobSearch.BLL\\JobSearch.BLL.csproj"
+            "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.BLL\\JobSearch.BLL.csproj": {
+              "projectPath": "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.BLL\\JobSearch.BLL.csproj"
             },
-            "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website-entity\\JobSearch\\JobSearch.DLL\\JobSearch.DLL.csproj": {
-              "projectPath": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website-entity\\JobSearch\\JobSearch.DLL\\JobSearch.DLL.csproj"
+            "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\JobSearch.DLL.csproj": {
+              "projectPath": "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\JobSearch.DLL.csproj"
             }
           }
         }

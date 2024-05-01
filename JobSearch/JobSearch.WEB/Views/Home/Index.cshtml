@@ -24,7 +24,7 @@
                     <p class="vacancy-description">
                         @Regex.Replace(vacancy.Description, "<.*?>", String.Empty)
                     </p>
-                    <form asp-controller="Info" asp-action="Details" asp-route-Id="@vacancy.Id" method="get">
+                    <form asp-controller="Info" asp-action="Details" asp-route-Id="@vacancy.VacancyId" method="get">
                         <button type="submit" class="btn btn-info">@Resources.Resource.Button_ViewAndRespond</button>
                     </form>
                 </li>

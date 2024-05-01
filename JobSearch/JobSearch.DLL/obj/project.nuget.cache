@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lZmO1/POlmiIkgB0VxPu7xiuDKXeZdY1mV2wk5+tGcXaDhxxx7Ua79ScCg8U8vSkbCKXFaAY6SPSdk2CPMAEfg==",
+  "dgSpecHash": "RWTvWkJOa4AAZJNMrL+6PXIp8N6RYOS7rqqv7KJhZH73rcIVrOsZEqSHF796oQ/RFYknyX67MTk3q+D16arMBg==",
   "success": true,
-  "projectFilePath": "D:\\Дипломная работа НАУ 4-й курс\\Program\\job-search-website-entity\\JobSearch\\JobSearch.DLL\\JobSearch.DLL.csproj",
+  "projectFilePath": "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\JobSearch.DLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vlad\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\vlad\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

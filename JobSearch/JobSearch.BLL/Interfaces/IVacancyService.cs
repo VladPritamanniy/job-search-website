@@ -4,17 +4,17 @@ namespace JobSearch.BLL.Interfaces
 {
     public interface IVacancyService
     {
-        Task<Vacancy> Get(int id);
+        Task<VacancyDto> Get(int id);
 
-        Task Create(Vacancy vacancy);
+        Task Create(VacancyDto vacancyDto);
 
         Task Delete(int id);
 
-        Task<IEnumerable<Vacancy>> GetAll();
+        Task<IEnumerable<VacancyDto>> GetAll();
 
-        Task AddResponse(VacancyResponse response);
+        Task AddResponse(VacancyResponseDto responseDto);
 
-        Task<IEnumerable<VacancyResponse>> GetResponsesByVacancyId(int id);
+        Task<IEnumerable<VacancyResponseDto>> GetResponsesByVacancyId(int id);
 
         Task<byte[]> GetResumeById(int id);
     }

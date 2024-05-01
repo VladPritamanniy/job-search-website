@@ -24,7 +24,7 @@ namespace JobSearch.WEB.Controllers
             var vacancy = await _vacancyService.Get(id);
             var vacancyModel = new VacancyDetailsViewModel
             {
-                Id = vacancy.Id,
+                VacancyId = vacancy.VacancyId,
                 Title = vacancy.Title,
                 Description = vacancy.Description
             };
@@ -44,13 +44,13 @@ namespace JobSearch.WEB.Controllers
                 }
                 var model = new VacancyResponseModel
                 {
-                    Fname = viewModel.Response.FName,
-                    Lname = viewModel.Response.LName,
+                    FName = viewModel.Response.FName,
+                    LName = viewModel.Response.LName,
                     Resume = resumeByteArray,
                     CoverLetter = viewModel.Response.CoverLetter,
-                    VacancyId = viewModel.Id
+                    VacancyId = viewModel.VacancyId
                 };
-                var modelMap = _mapper.Map<VacancyResponse>(model);
+                var modelMap = _mapper.Map<VacancyResponseDto>(model);
 
                 await _vacancyService.AddResponse(modelMap);
                 return Redirect("/");

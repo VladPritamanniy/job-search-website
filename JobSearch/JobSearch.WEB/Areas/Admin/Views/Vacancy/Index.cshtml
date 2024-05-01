@@ -1,10 +1,11 @@
 ﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using System.Text.RegularExpressions
 @model JobSearch.WEB.ViewModels.VacancyListViewModel
 @{
     int vacancyCounter = 1;
 }
 
-<div class="btn btn-primary btn-create">@Html.ActionLink(@Resources.Resource.Lable_CreateVacancy, "Edit", "Vacancy", htmlAttributes: new { @class = "admin-lable" })</div>
+<div class="btn btn-primary btn-create">@Html.ActionLink(@Resources.Resource.Lable_CreateVacancy, "Edit", "VacancyDto", htmlAttributes: new { @class = "admin-lable" })</div>
 <table class="table table-bordered table-striped table-vacancy">
     <thead>
         <tr>
@@ -25,25 +26,27 @@
         {
             <tr>
                 <td>@vacancyCounter</td>
-                <td>@item.Id</td>
+                <td>@item.VacancyId</td>
                 <td>@item.Title</td>
-                <td class="vacancy-description">@item.Description</td>
+                <td class="vacancy-description">
+                    @Regex.Replace(item.Description, "<.*?>", String.Empty)
+                </td>
                 <td>@item.IsPublished</td>
                 <td>@item.PublicationDate</td>
                 <td>
                     <ul class="vacancy-action-buttons">
                         <li>
-                            <form asp-controller="Vacancy" asp-action="GetResponsesById" asp-area="Admin" asp-route-Id="@item.Id" method="get">
+                            <form asp-controller="Vacancy" asp-action="GetResponsesById" asp-area="Admin" asp-route-Id="@item.VacancyId" method="get">
                                     <button type="submit" class="btn btn-info">@Resources.Resource.Button_Reviews</button>
                             </form>
                         </li>
                         <li>
-                            <form asp-controller="Vacancy" asp-action="Edit" asp-area="Admin" asp-route-Id="@item.Id">
+                            <form asp-controller="Vacancy" asp-action="Edit" asp-area="Admin" asp-route-Id="@item.VacancyId">
                                 <button type="submit" class="btn btn-success">@Resources.Resource.Lable_Edit</button>
                             </form>
                         </li>
                         <li>
-                            <form asp-controller="Vacancy" asp-action="Delete" asp-area="Admin" asp-route-Id="@item.Id">
+                            <form asp-controller="Vacancy" asp-action="Delete" asp-area="Admin" asp-route-Id="@item.VacancyId">
                                 <input type="submit" class="btn btn-danger" value="@Resources.Resource.Lable_Delete"/>
                             </form>
                         </li>

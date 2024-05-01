@@ -3,7 +3,7 @@
 
 @using (Html.BeginForm("SendResponse", "Info", FormMethod.Post, htmlAttributes: new { enctype = "multipart/form-data" }))
 {
-    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.VacancyId)
     @Html.HiddenFor(m => m.Title)
     @Html.HiddenFor(m => m.Description)
     <div class="vacancy-details-container">

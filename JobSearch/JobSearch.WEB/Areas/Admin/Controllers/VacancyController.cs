@@ -58,7 +58,7 @@ namespace JobSearch.WEB.Areas.Admin.Controllers
                 if(vacancy.IsPublished){ vacancy.PublicationDate = DateTime.Now;}
 
                 var vacancyModel = _mapper.Map<VacancyModel>(vacancy);
-                var vacancyDto = _mapper.Map<Vacancy>(vacancyModel);
+                var vacancyDto = _mapper.Map<VacancyDto>(vacancyModel);
 
                 await _vacancyService.Create(vacancyDto);
 

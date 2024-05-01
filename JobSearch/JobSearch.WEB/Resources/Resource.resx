@@ -150,6 +150,9 @@
   <data name="FullEmployment" xml:space="preserve">
     <value>Повна зайнятість</value>
   </data>
+  <data name="HybridFormat" xml:space="preserve">
+    <value>Гібридний формат</value>
+  </data>
   <data name="Internship" xml:space="preserve">
     <value>Стажування</value>
   </data>

@@ -1,22 +1,22 @@
-﻿using JobSearch.DLL.Entities;
+﻿using JobSearch.DLL.EfClasses;
 
 namespace JobSearch.DLL.Interfaces
 {
     public interface IVacancyRepository
     {
-        Task Add(VacancyEntity vacancy);
+        Task Add(Vacancy vacancy);
 
-        Task<VacancyEntity> GetById(int id);
+        Task<Vacancy> GetById(int id);
 
-        Task<IEnumerable<VacancyEntity>> GetAll();
+        Task<IEnumerable<Vacancy>> GetAll();
 
         Task Delete(int id);
 
-        Task Update(VacancyEntity vacancy);
+        Task Update(Vacancy vacancy);
 
-        Task AddResponse(VacancyResponseEntity response);
+        Task AddResponse(VacancyResponse response);
 
-        Task<IEnumerable<VacancyResponseEntity>> GetResponsesByVacancyId(int id);
+        Task<IEnumerable<VacancyResponse>> GetResponsesByVacancyId(int id);
 
         Task<byte[]> GetResumeById(int id);
     }

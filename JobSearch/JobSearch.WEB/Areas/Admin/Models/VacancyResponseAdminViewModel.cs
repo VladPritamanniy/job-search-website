@@ -2,11 +2,11 @@
 {
     public class VacancyResponseAdminViewModel
     {
-        public int Id { get; set; }
+        public int VacancyResponseId { get; set; }
 
-        public string? Fname { get; set; }
+        public string? FName { get; set; }
 
-        public string? Lname { get; set; }
+        public string? LName { get; set; }
 
         public string? CoverLetter { get; set; }
     }

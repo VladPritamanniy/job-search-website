@@ -4,7 +4,7 @@ namespace JobSearch.BLL.Interfaces
 {
     public interface IJwtProvider
     {
-        string GenerateToken(User user);
+        string GenerateToken(UserDto userDto);
         string GenerateRefreshToken();
     }
 }

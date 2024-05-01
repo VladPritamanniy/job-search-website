@@ -4,7 +4,7 @@ using System.Text;
 using AutoMapper;
 using JobSearch.BLL.DTO;
 using JobSearch.BLL.Interfaces;
-using JobSearch.DLL.Entities;
+using JobSearch.DLL.EfClasses;
 using JobSearch.DLL.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -31,12 +31,12 @@ namespace JobSearch.BLL.Services
         public async Task Register(string email, string password)
         {
             var hashedPassword = _passwordHasher.Generate(password);
-            var userDto = new User
+            var userDto = new UserDto
             {
                 Email = email,
                 PasswordHash = hashedPassword
             };
-            await _userRepository.Add(_mapper.Map<UserEntity>(userDto));
+            await _userRepository.Add(_mapper.Map<User>(userDto));
         }
 
         public async Task<RefreshTokenOptions> Login(string email, string password)
@@ -47,16 +47,16 @@ namespace JobSearch.BLL.Services
                 return new RefreshTokenOptions();
             }
 
-            var accessToken = _jwtProvider.GenerateToken(_mapper.Map<User>(user));
+            var accessToken = _jwtProvider.GenerateToken(_mapper.Map<UserDto>(user));
             var refreshToken = _jwtProvider.GenerateRefreshToken();
 
-            var userDto = new User
+            var userDto = new UserDto
             {
                 Email = email,
                 RefreshToken = refreshToken,
                 RefreshTokenExpiry = DateTime.UtcNow.AddDays(30)
             };
-            await _userRepository.Update(_mapper.Map<UserEntity>(userDto));
+            await _userRepository.Update(_mapper.Map<User>(userDto));
 
             return new RefreshTokenOptions{ AccessToken = accessToken, RefreshToken = refreshToken };
         }
@@ -71,20 +71,20 @@ namespace JobSearch.BLL.Services
             if (!string.IsNullOrEmpty(userId))
             {
                 var user = await _userRepository.GetById(int.Parse(userId));
-                var mapUser = _mapper.Map<User>(user);
+                var mapUser = _mapper.Map<UserDto>(user);
 
                 if (mapUser.RefreshToken == refreshToken && mapUser.RefreshTokenExpiry > DateTime.UtcNow)
                 {
                     newAccessToken = _jwtProvider.GenerateToken(mapUser);
                     newRefreshTokenn = _jwtProvider.GenerateRefreshToken();
-                    var userDto = new User
+                    var userDto = new UserDto
                     {
                         Email = mapUser.Email,
                         RefreshToken = newRefreshTokenn,
                         RefreshTokenExpiry = DateTime.UtcNow.AddDays(30)
                     };
 
-                    await _userRepository.Update(_mapper.Map<UserEntity>(userDto));
+                    await _userRepository.Update(_mapper.Map<User>(userDto));
                 }
             }
             return new RefreshTokenOptions { AccessToken = newAccessToken, RefreshToken = newRefreshTokenn };

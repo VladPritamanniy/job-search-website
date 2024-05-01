@@ -15,14 +15,14 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.Fname</td>
-                <td>@item.Lname</td>
+                <td>@item.FName</td>
+                <td>@item.LName</td>
                 <td>@item.CoverLetter</td>
                 <td>
                     <form asp-controller="Vacancy" asp-action="DownloadResume" asp-area="Admin" method="get">
-                        <input type="hidden" name="Id" value="@item.Id" />
-                        <input type="hidden" name="Fname" value="@item.Fname" />
-                        <input type="hidden" name="Lname" value="@item.Lname" />
+                        <input type="hidden" name="Id" value="@item.VacancyResponseId" />
+                        <input type="hidden" name="FName" value="@item.FName" />
+                        <input type="hidden" name="LName" value="@item.LName" />
                         <button type="submit" class="btn btn-info">@Resources.Resource.Button_DownloadResume</button>
                     </form>
                 </td>

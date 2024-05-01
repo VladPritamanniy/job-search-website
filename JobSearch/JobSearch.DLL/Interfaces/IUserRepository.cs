@@ -1,15 +1,15 @@
-﻿using JobSearch.DLL.Entities;
+﻿using JobSearch.DLL.EfClasses;
 
 namespace JobSearch.DLL.Interfaces
 {
     public interface IUserRepository
     {
-        Task Add(UserEntity userEntity);
+        Task Add(User user);
 
-        Task<UserEntity> GetByEmail(string email);
+        Task<User> GetByEmail(string email);
 
-        Task Update(UserEntity userEntity);
+        Task Update(User user);
 
-        Task<UserEntity> GetById(int id);
+        Task<User> GetById(int id);
     }
 }

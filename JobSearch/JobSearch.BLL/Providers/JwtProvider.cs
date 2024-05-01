@@ -14,9 +14,9 @@ namespace JobSearch.BLL.Providers
     {
         private readonly JwtOptions _options = options.Value;
 
-        public string GenerateToken(User user)
+        public string GenerateToken(UserDto userDto)
         {
-            Claim[] claims = [new("userId", user.Id.ToString())];
+            Claim[] claims = [new("userId", userDto.UserId.ToString())];
 
             var signingCredentials = new SigningCredentials(
                 new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.SecretKey)),
