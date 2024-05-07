@@ -4,15 +4,13 @@ namespace JobSearch.DLL.Interfaces
 {
     public interface IVacancyRepository
     {
-        Task Add(Vacancy vacancy);
+        Task CreateOrUpdateIfExist(Vacancy vacancy);
 
         Task<Vacancy> GetById(int id);
 
         Task<IEnumerable<Vacancy>> GetAll();
 
         Task Delete(int id);
-
-        Task Update(Vacancy vacancy);
 
         Task AddResponse(VacancyResponse response);
 

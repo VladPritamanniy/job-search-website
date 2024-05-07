@@ -21,12 +21,12 @@ namespace JobSearch.DLL.Repositories
 
         public async Task<User> GetByEmail(string email)
         {
-            return await _context.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Email == email);
+            return await _context.Users.AsNoTracking().SingleOrDefaultAsync(u => u.Email == email);
         }
 
         public async Task<User> GetById(int id)
         {
-            return await _context.Users.AsNoTracking().FirstOrDefaultAsync(u => u.UserId == id);
+            return await _context.Users.AsNoTracking().SingleOrDefaultAsync(u => u.UserId == id);
         }
 
         public async Task Update(User user)

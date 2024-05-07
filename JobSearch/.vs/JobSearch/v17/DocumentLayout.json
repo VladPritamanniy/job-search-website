@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0C8B19F2-49ED-40C3-8516-1B5A7B44563E}|JobSearch.DLL\\JobSearch.DLL.csproj|d:\\program-languages\\\u0441-sharp\\my-personal-projects\\job-search-website\\jobsearch\\jobsearch.dll\\repositories\\vacancyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C8B19F2-49ED-40C3-8516-1B5A7B44563E}|JobSearch.DLL\\JobSearch.DLL.csproj|solutionrelative:jobsearch.dll\\repositories\\vacancyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C8B19F2-49ED-40C3-8516-1B5A7B44563E}|JobSearch.DLL\\JobSearch.DLL.csproj|d:\\program-languages\\\u0441-sharp\\my-personal-projects\\job-search-website\\jobsearch\\jobsearch.dll\\interfaces\\ivacancyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C8B19F2-49ED-40C3-8516-1B5A7B44563E}|JobSearch.DLL\\JobSearch.DLL.csproj|solutionrelative:jobsearch.dll\\interfaces\\ivacancyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E11693D8-EB26-476A-8CE0-4B029305FAA6}|JobSearch.BLL\\JobSearch.BLL.csproj|d:\\program-languages\\\u0441-sharp\\my-personal-projects\\job-search-website\\jobsearch\\jobsearch.bll\\services\\vacancyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E11693D8-EB26-476A-8CE0-4B029305FAA6}|JobSearch.BLL\\JobSearch.BLL.csproj|solutionrelative:jobsearch.bll\\services\\vacancyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E11693D8-EB26-476A-8CE0-4B029305FAA6}|JobSearch.BLL\\JobSearch.BLL.csproj|d:\\program-languages\\\u0441-sharp\\my-personal-projects\\job-search-website\\jobsearch\\jobsearch.bll\\interfaces\\ivacancyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E11693D8-EB26-476A-8CE0-4B029305FAA6}|JobSearch.BLL\\JobSearch.BLL.csproj|solutionrelative:jobsearch.bll\\interfaces\\ivacancyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\program-languages\\\u0441-sharp\\my-personal-projects\\job-search-website\\jobsearch\\jobsearch.web\\areas\\admin\\views\\vacancy\\vacancyresponses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\areas\\admin\\views\\vacancy\\vacancyresponses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\program-languages\\\u0441-sharp\\my-personal-projects\\job-search-website\\jobsearch\\jobsearch.web\\areas\\admin\\controllers\\vacancycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\areas\\admin\\controllers\\vacancycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C8B19F2-49ED-40C3-8516-1B5A7B44563E}|JobSearch.DLL\\JobSearch.DLL.csproj|d:\\program-languages\\\u0441-sharp\\my-personal-projects\\job-search-website\\jobsearch\\jobsearch.dll\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C8B19F2-49ED-40C3-8516-1B5A7B44563E}|JobSearch.DLL\\JobSearch.DLL.csproj|solutionrelative:jobsearch.dll\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\program-languages\\\u0441-sharp\\my-personal-projects\\job-search-website\\jobsearch\\jobsearch.web\\areas\\admin\\views\\vacancy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\areas\\admin\\views\\vacancy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -42,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 255,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "JobSearchContext.cs",
               "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\Context\\JobSearchContext.cs",
               "RelativeDocumentMoniker": "JobSearch.DLL\\Context\\JobSearchContext.cs",
@@ -55,12 +83,11 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T11:23:25.135Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\Program.cs",
               "RelativeDocumentMoniker": "JobSearch.WEB\\Program.cs",
@@ -69,8 +96,7 @@
               "ViewState": "AQIAAGsAAAAAAAAAAAAAADsAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-01T18:30:34.83Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -110,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "IUserService.cs",
               "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.BLL\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "JobSearch.BLL\\Interfaces\\IUserService.cs",
@@ -118,12 +144,11 @@
               "RelativeToolTip": "JobSearch.BLL\\Interfaces\\IUserService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T09:38:19.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T09:38:19.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.BLL\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "JobSearch.BLL\\Services\\UserService.cs",
@@ -131,12 +156,11 @@
               "RelativeToolTip": "JobSearch.BLL\\Services\\UserService.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAgwCAAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T09:38:22.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T09:38:22.755Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "IPasswordHasher.cs",
               "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.BLL\\Interfaces\\IPasswordHasher.cs",
               "RelativeDocumentMoniker": "JobSearch.BLL\\Interfaces\\IPasswordHasher.cs",
@@ -144,12 +168,11 @@
               "RelativeToolTip": "JobSearch.BLL\\Interfaces\\IPasswordHasher.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T09:38:27.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T09:38:27.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.BLL\\Infrastructure\\Authentication\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "JobSearch.BLL\\Infrastructure\\Authentication\\PasswordHasher.cs",
@@ -157,12 +180,11 @@
               "RelativeToolTip": "JobSearch.BLL\\Infrastructure\\Authentication\\PasswordHasher.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAB0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T09:38:29.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T09:38:29.895Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "JobSearch.WEB\\Areas\\Admin\\Views\\Home\\Index.cshtml",
@@ -170,12 +192,11 @@
               "RelativeToolTip": "JobSearch.WEB\\Areas\\Admin\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-01T09:39:40.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T09:39:40.764Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\Index.cshtml",
               "RelativeDocumentMoniker": "JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\Index.cshtml",
@@ -183,7 +204,95 @@
               "RelativeToolTip": "JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\Index.cshtml",
               "ViewState": "AQIAACcAAAAAAAAAAAAAADQAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-01T09:41:31.419Z",
+              "WhenOpened": "2024-05-01T09:41:31.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VacancyRepository.cs",
+              "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\Repositories\\VacancyRepository.cs",
+              "RelativeDocumentMoniker": "JobSearch.DLL\\Repositories\\VacancyRepository.cs",
+              "ToolTip": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\Repositories\\VacancyRepository.cs",
+              "RelativeToolTip": "JobSearch.DLL\\Repositories\\VacancyRepository.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:44:58.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "JobSearch.DLL\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "JobSearch.DLL\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T15:21:58.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IVacancyRepository.cs",
+              "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\Interfaces\\IVacancyRepository.cs",
+              "RelativeDocumentMoniker": "JobSearch.DLL\\Interfaces\\IVacancyRepository.cs",
+              "ToolTip": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\Interfaces\\IVacancyRepository.cs",
+              "RelativeToolTip": "JobSearch.DLL\\Interfaces\\IVacancyRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T15:30:13.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VacancyService.cs",
+              "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.BLL\\Services\\VacancyService.cs",
+              "RelativeDocumentMoniker": "JobSearch.BLL\\Services\\VacancyService.cs",
+              "ToolTip": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.BLL\\Services\\VacancyService.cs",
+              "RelativeToolTip": "JobSearch.BLL\\Services\\VacancyService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T15:34:21.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IVacancyService.cs",
+              "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.BLL\\Interfaces\\IVacancyService.cs",
+              "RelativeDocumentMoniker": "JobSearch.BLL\\Interfaces\\IVacancyService.cs",
+              "ToolTip": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.BLL\\Interfaces\\IVacancyService.cs",
+              "RelativeToolTip": "JobSearch.BLL\\Interfaces\\IVacancyService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T15:34:25.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VacancyController.cs",
+              "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Controllers\\VacancyController.cs",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\Areas\\Admin\\Controllers\\VacancyController.cs",
+              "ToolTip": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Controllers\\VacancyController.cs",
+              "RelativeToolTip": "JobSearch.WEB\\Areas\\Admin\\Controllers\\VacancyController.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAUwFUAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T15:34:30.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VacancyResponses.cshtml",
+              "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\VacancyResponses.cshtml",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\VacancyResponses.cshtml",
+              "ToolTip": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\VacancyResponses.cshtml",
+              "RelativeToolTip": "JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\VacancyResponses.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-01T15:35:57.151Z",
               "EditorCaption": ""
             }
           ]

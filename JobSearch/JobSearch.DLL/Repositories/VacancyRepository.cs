@@ -14,7 +14,7 @@ namespace JobSearch.DLL.Repositories
             _context = context;
         }
 
-        public async Task Add(Vacancy vacancy)
+        public async Task CreateOrUpdateIfExist(Vacancy vacancy)
         {
             if (await GetById(vacancy.VacancyId) != null)
             {
@@ -29,7 +29,7 @@ namespace JobSearch.DLL.Repositories
 
         public async Task<Vacancy> GetById(int id)
         {
-            return await _context.Vacancies.AsNoTracking().FirstOrDefaultAsync(v => v.VacancyId == id);
+            return await _context.Vacancies.AsNoTracking().SingleOrDefaultAsync(v => v.VacancyId == id);
         }
 
         public async Task<IEnumerable<Vacancy>> GetAll()
@@ -43,7 +43,7 @@ namespace JobSearch.DLL.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task Update(Vacancy vacancy)
+        private async Task Update(Vacancy vacancy)
         {
             await _context.Vacancies.Where(v => v.VacancyId == vacancy.VacancyId).ExecuteUpdateAsync(s => s
                 .SetProperty(v => v.Title, vacancy.Title)
@@ -70,9 +70,10 @@ namespace JobSearch.DLL.Repositories
         public async Task<byte[]> GetResumeById(int id)
         {
             return await _context.VacancyResponses
-                            .Where(vr => vr.VacancyResponseId == id)
-                            .Select(vr => vr.Resume)
-                            .FirstOrDefaultAsync();
-                    }
+                                 .AsNoTracking()
+                                 .Where(vr => vr.VacancyResponseId == id)
+                                 .Select(vr => vr.Resume)
+                                 .SingleAsync();
+                                 }
     }
 }
