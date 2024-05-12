@@ -1,7 +1,6 @@
 using AutoMapper;
 using JobSearch.BLL.Interfaces;
 using JobSearch.WEB.Models;
-using JobSearch.WEB.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JobSearch.WEB.Controllers
@@ -17,11 +16,14 @@ namespace JobSearch.WEB.Controllers
 			_mapper = mapper;
         }
 
-		public async Task<IActionResult> Index()
+        [HttpGet]
+		public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 5, string searchString = null)
         {
-            var vacancies = await _vacancyService.GetAll();
-            var vacanciesList = new VacancyListViewModel() { Items = _mapper.Map<IEnumerable<VacancyModel>>(vacancies) };
-            return View(vacanciesList);
+            var vacanciesDto = await _vacancyService.GetAll(pageNumber, pageSize, searchString);
+            var vacanciesCount = _vacancyService.GetCount();
+            var vacanciesModel = _mapper.Map<IEnumerable<VacancyModel>>(vacanciesDto);
+            var vacancies = new PagedListModel<VacancyModel>(vacanciesModel, pageNumber, pageSize, vacanciesCount);
+            return View(vacancies);
 		}
 	}
 }

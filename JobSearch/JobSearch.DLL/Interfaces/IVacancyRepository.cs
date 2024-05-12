@@ -10,6 +10,10 @@ namespace JobSearch.DLL.Interfaces
 
         Task<IEnumerable<Vacancy>> GetAll();
 
+        Task<IEnumerable<Vacancy>> GetAll(int pageNumber, int pageSize, string searchString);
+
+        int GetCount();
+
         Task Delete(int id);
 
         Task AddResponse(VacancyResponse response);

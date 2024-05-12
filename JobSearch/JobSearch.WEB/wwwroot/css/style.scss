@@ -1,7 +1,11 @@
 ﻿html {
     font-size: 14px;
 }
-
+body {
+    .container {
+        padding: 0;
+    }
+}
 @media (min-width: 768px) {
     html {
         font-size: 16px;
@@ -98,6 +102,8 @@ html {
     }
 }
 .vacancies-list {
+    margin:0;
+    padding:0;
     li {
         display: flex;
         justify-content: space-between;
@@ -193,6 +199,9 @@ html {
 footer {
     height: 50px;
     background-color: slategrey !important;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 
     .container {
         color: white;
@@ -215,4 +224,17 @@ footer {
 }
 .vacancy-details-description {
     width: 70%;
+}
+#PageSize{
+    width: 70px;
+}
+
+.paging {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-end;
+    height: 70px;
+    margin-bottom: 70px;
 }

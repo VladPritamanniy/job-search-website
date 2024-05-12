@@ -2,6 +2,7 @@
 using JobSearch.DLL.EfClasses;
 using JobSearch.DLL.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace JobSearch.DLL.Repositories
 {
@@ -16,15 +17,22 @@ namespace JobSearch.DLL.Repositories
 
         public async Task CreateOrUpdateIfExist(Vacancy vacancy)
         {
-            if (await GetById(vacancy.VacancyId) != null)
+            try
             {
-                await Update(vacancy);
+                if (await GetById(vacancy.VacancyId) != null)
+                {
+                    await Update(vacancy);
+                }
+                else
+                {
+                    await _context.Vacancies.AddAsync(vacancy);
+                }
+                await _context.SaveChangesAsync();
             }
-            else
+            catch(Exception e)
             {
-                await _context.Vacancies.AddAsync(vacancy);
+                Log.Error($"VacancyRepository.CreateOrUpdateIfExist - {e}");
             }
-            await _context.SaveChangesAsync();
         }
 
         public async Task<Vacancy> GetById(int id)
@@ -34,32 +42,76 @@ namespace JobSearch.DLL.Repositories
 
         public async Task<IEnumerable<Vacancy>> GetAll()
         {
-            return await _context.Vacancies.AsNoTracking().ToListAsync();
+            return await _context.Vacancies
+                                 .AsNoTracking()
+                                 .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Vacancy>> GetAll(int pageNumber, int pageSize, string searchString)
+        {
+            var query = _context.Vacancies
+                                                 .AsNoTracking();
+                                                 
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                query = query.Where(p => p.Title.Contains(searchString) || p.Description.Contains(searchString));
+            }
+
+            query = query.Skip((pageNumber - 1) * pageSize)
+                         .Take(pageSize);
+
+            return await query.ToListAsync();
+        }
+
+        public int GetCount()
+        {
+            return _context.Vacancies.Count();
         }
 
         public async Task Delete(int id)
         {
-            await _context.Vacancies.Where(v => v.VacancyId == id).ExecuteDeleteAsync();
-            await _context.SaveChangesAsync();
+            try
+            {
+                await _context.Vacancies.Where(v => v.VacancyId == id).ExecuteDeleteAsync();
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception e)
+            {
+                Log.Error($"VacancyRepository.Delete - {e}");
+            }
         }
 
         private async Task Update(Vacancy vacancy)
         {
-            await _context.Vacancies.Where(v => v.VacancyId == vacancy.VacancyId).ExecuteUpdateAsync(s => s
-                .SetProperty(v => v.Title, vacancy.Title)
-                .SetProperty(v => v.Description, vacancy.Description)
-                .SetProperty(v => v.ExperienceId, vacancy.ExperienceId)
-                .SetProperty(v => v.EmploymentTypeId, vacancy.EmploymentTypeId)
-                .SetProperty(v => v.PublicationDate, vacancy.PublicationDate)
-                .SetProperty(v => v.IsPublished, vacancy.IsPublished)
-                .SetProperty(v => v.FormatId, vacancy.FormatId)
-            );
+            try
+            {
+                await _context.Vacancies.Where(v => v.VacancyId == vacancy.VacancyId).ExecuteUpdateAsync(s => s
+                    .SetProperty(v => v.Title, vacancy.Title)
+                    .SetProperty(v => v.Description, vacancy.Description)
+                    .SetProperty(v => v.ExperienceId, vacancy.ExperienceId)
+                    .SetProperty(v => v.EmploymentTypeId, vacancy.EmploymentTypeId)
+                    .SetProperty(v => v.PublicationDate, vacancy.PublicationDate)
+                    .SetProperty(v => v.IsPublished, vacancy.IsPublished)
+                    .SetProperty(v => v.FormatId, vacancy.FormatId)
+                );
+            }
+            catch (Exception e)
+            {
+                Log.Error($"VacancyRepository.Update - {e}");
+            }
         }
 
         public async Task AddResponse(VacancyResponse response)
         {
-            await _context.VacancyResponses.AddAsync(response);
-            await _context.SaveChangesAsync();
+            try
+            {
+                await _context.VacancyResponses.AddAsync(response);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception e)
+            {
+                Log.Error($"VacancyRepository.AddResponse - {e}");
+            }
         }
 
         public async Task<IEnumerable<VacancyResponse>> GetResponsesByVacancyId(int id)

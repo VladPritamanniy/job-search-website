@@ -1,36 +1,73 @@
 ﻿@using System.Text.RegularExpressions
 @using Humanizer
+@using JobSearch.WEB.Models.Enums
 @using Microsoft.AspNetCore.Mvc.TagHelpers
-@model JobSearch.WEB.ViewModels.VacancyListViewModel
+@model JobSearch.WEB.Models.PagedListModel<VacancyModel>
 @{
-    var vacancies = Model.Items.Where(m=>m.IsPublished);
+    var previousPage = Model.HasPreviousPage ? "" : "disabled";
+    var nextPage = Model.HasNextPage ? "" : "disabled";
+    var previousPageNumber = Model.PageNumber - 1;
+    var nextPageNumber = Model.PageNumber + 1;
 }
 
 <div class="text-center">
+    <form asp-controller="Home" asp-action="Index" method="get">
+        <p>
+            <input type="text" name="SearchString" />
+            <input type="submit" value="Filter" />
+        </p>
+    </form>
     <div class="container">
         <div class="navigation"></div>
         <ul class="vacancies-list">
-            @foreach (var vacancy in vacancies)
+            @for (int vacancy = 0; vacancy < Model.ItemsPerPage; vacancy++)
             {
                 <li class="vacancy-container">
                     <div>
-                        <h5><a>@vacancy.Title</a></h5>
+                        <h5><a>@Model[vacancy].Title</a></h5>
                         <ul class="search-labels">
-                            <li>@vacancy.EmploymentTypeId.Humanize()</li>
-                            <li>@vacancy.ExperienceId.Humanize()</li>
-                            <li>@vacancy.FormatId.Humanize()</li>
+                            <li>@Model[vacancy].EmploymentTypeId.Humanize()</li>
+                            <li>@Model[vacancy].ExperienceId.Humanize()</li>
+                            <li>@Model[vacancy].FormatId.Humanize()</li>
                         </ul>
                     </div>
                     <p class="vacancy-description">
-                        @Regex.Replace(vacancy.Description, "<.*?>", String.Empty)
+                        @Regex.Replace(Model[vacancy].Description, "<.*?>", String.Empty)
                     </p>
-                    <form asp-controller="Info" asp-action="Details" asp-route-Id="@vacancy.VacancyId" method="get">
+                    <form asp-controller="Info" asp-action="Details" asp-route-Id="@Model[vacancy].VacancyId" method="get">
                         <button type="submit" class="btn btn-info">@Resources.Resource.Button_ViewAndRespond</button>
                     </form>
                 </li>
             }
         </ul>
     </div>
+    <ul class="paging">
+        <li>
+            <ul class="pagination">
+                <li class="page-item @previousPage">
+                    @Html.ActionLink("<<", "Index", "Home", new { pageNumber = previousPageNumber, pageSize = Model.PageSize }, new { @class = "page-link" })
+                </li>
+                @for (int page = 1; page <= Model.TotalPages; page++)
+                {
+                    string isActive = (page == Model.PageNumber) ? "active" : "";
+                    <li class="page-item @isActive">
+                        @Html.ActionLink(page.ToString(), "Index", "Home", new { pageNumber = page, pageSize = Model.PageSize }, new { @class = "page-link" })
+                    </li>
+                }
+                <li class="page-item @nextPage">
+                    @Html.ActionLink(">>", "Index", "Home", new { pageNumber = nextPageNumber, pageSize = Model.PageSize }, new { @class = "page-link" })
+                </li>
+            </ul>
+        </li>
+        <li>
+            <select asp-for="PageSize"
+                    name="PageSize"
+                    class="form-select"
+                    asp-items="Html.GetEnumSelectList<PageSizeEnum>()"
+                    onchange="changePageSize(this)">
+            </select>
+        </li>
+    </ul>
 </div>
 
 <script>
@@ -40,4 +77,9 @@
             description.textContent = description.textContent.substring(0, 450) + '...';
         }
     });
+
+    function changePageSize(selectElement) {
+        let actionLinkUrl = '@Url.Action("Index", "Home")' + '?pageNumber=' + @Model.PageNumber + '&pageSize=' + selectElement.value;
+        window.location.href = actionLinkUrl;
+    }
 </script>

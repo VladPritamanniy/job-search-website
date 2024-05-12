@@ -39,6 +39,17 @@ namespace JobSearch.BLL.Services
             return _mapper.Map<IEnumerable<VacancyDto>>(vacancies);
         }
 
+        public async Task<IEnumerable<VacancyDto>> GetAll(int pageNumber, int pageSize, string searchString)
+        {
+            var vacancies = await _vacancyRepository.GetAll(pageNumber, pageSize, searchString);
+            return _mapper.Map<IEnumerable<VacancyDto>>(vacancies);
+        }
+
+        public int GetCount()
+        {
+            return _vacancyRepository.GetCount();
+        }
+
         public async Task AddResponse(VacancyResponseDto responseDto)
         {
             await _vacancyRepository.AddResponse(_mapper.Map<VacancyResponse>(responseDto));

@@ -12,6 +12,10 @@ namespace JobSearch.BLL.Interfaces
 
         Task<IEnumerable<VacancyDto>> GetAll();
 
+        Task<IEnumerable<VacancyDto>> GetAll(int pageNumber, int pageSize, string searchString);
+
+        int GetCount();
+
         Task AddResponse(VacancyResponseDto responseDto);
 
         Task<IEnumerable<VacancyResponseDto>> GetResponsesByVacancyId(int id);

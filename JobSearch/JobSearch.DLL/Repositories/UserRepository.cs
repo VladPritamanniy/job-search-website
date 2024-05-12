@@ -2,6 +2,7 @@
 using JobSearch.DLL.EfClasses;
 using Microsoft.EntityFrameworkCore;
 using JobSearch.DLL.Interfaces;
+using Serilog;
 
 namespace JobSearch.DLL.Repositories
 {
@@ -15,8 +16,15 @@ namespace JobSearch.DLL.Repositories
 
         public async Task Add(User user)
         {
-            await _context.Users.AddAsync(user);
-            await _context.SaveChangesAsync();
+            try
+            {
+                await _context.Users.AddAsync(user);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception e)
+            {
+                Log.Error($"UserRepository.Add - {e}");
+            }
         }
 
         public async Task<User> GetByEmail(string email)
@@ -31,11 +39,18 @@ namespace JobSearch.DLL.Repositories
 
         public async Task Update(User user)
         {
-            await _context.Users.Where(u => u.Email == user.Email).ExecuteUpdateAsync(s => s
-                .SetProperty(u => u.RefreshToken, user.RefreshToken)
-                .SetProperty(u => u.RefreshTokenExpiry, user.RefreshTokenExpiry)
-            );
-            await _context.SaveChangesAsync();
+            try
+            {
+                await _context.Users.Where(u => u.Email == user.Email).ExecuteUpdateAsync(s => s
+                    .SetProperty(u => u.RefreshToken, user.RefreshToken)
+                    .SetProperty(u => u.RefreshTokenExpiry, user.RefreshTokenExpiry)
+                );
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception e)
+            {
+                Log.Error($"UserRepository.Update - {e}");
+            }
         }
     }
 }
