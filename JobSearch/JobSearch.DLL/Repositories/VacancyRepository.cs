@@ -1,6 +1,7 @@
 ﻿using JobSearch.DLL.Context;
 using JobSearch.DLL.EfClasses;
 using JobSearch.DLL.Interfaces;
+using JobSearch.DLL.Repositories.QueryObjects;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -49,18 +50,11 @@ namespace JobSearch.DLL.Repositories
 
         public async Task<IEnumerable<Vacancy>> GetAll(int pageNumber, int pageSize, string searchString)
         {
-            var query = _context.Vacancies
-                                                 .AsNoTracking();
-                                                 
-            if (!string.IsNullOrEmpty(searchString))
-            {
-                query = query.Where(p => p.Title.Contains(searchString) || p.Description.Contains(searchString));
-            }
-
-            query = query.Skip((pageNumber - 1) * pageSize)
-                         .Take(pageSize);
-
-            return await query.ToListAsync();
+            return await _context.Vacancies
+                                 .AsNoTracking()
+                                 .Search(searchString)
+                                 .Page(pageNumber, pageSize)
+                                 .ToListAsync();
         }
 
         public int GetCount()

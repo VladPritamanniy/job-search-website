@@ -241,3 +241,7 @@ footer .container {
   height: 70px;
   margin-bottom: 70px;
 }
+
+.search-group {
+  display: flex;
+}

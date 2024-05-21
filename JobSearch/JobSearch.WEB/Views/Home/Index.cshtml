@@ -12,10 +12,37 @@
 
 <div class="text-center">
     <form asp-controller="Home" asp-action="Index" method="get">
-        <p>
-            <input type="text" name="SearchString" />
-            <input type="submit" value="Filter" />
-        </p>
+        <ul class="paging">
+            <li class="search-group">
+                <input class="form-control" type="text" name="searchString" value=@ViewData["SearchString"] />
+                <input class="btn btn-primary" type="submit" value="Search" />
+            </li>
+            <li>
+                <ul class="pagination">
+                    <li class="page-item @previousPage">
+                        @Html.ActionLink("<<", "Index", "Home", new { searchString = ViewData["SearchString"], pageNumber = previousPageNumber, pageSize = Model.PageSize }, new { @class = "page-link" })
+                    </li>
+                    @for (int page = 1; page <= Model.TotalPages; page++)
+                    {
+                        string isActive = (page == Model.PageNumber) ? "active" : "";
+                        <li class="page-item @isActive">
+                            @Html.ActionLink(page.ToString(), "Index", "Home", new { searchString = ViewData["SearchString"], pageNumber = page, pageSize = Model.PageSize }, new { @class = "page-link" })
+                        </li>
+                    }
+                    <li class="page-item @nextPage">
+                        @Html.ActionLink(">>", "Index", "Home", new { searchString = ViewData["SearchString"], pageNumber = nextPageNumber, pageSize = Model.PageSize }, new { @class = "page-link" })
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <select asp-for="PageSize"
+                        name="pageSize"
+                        asp-items="Html.GetEnumSelectList<PageSizeEnum>()"
+                        class="form-select"
+                        onchange="changePageSize(this)">
+                </select>
+            </li>
+        </ul>
     </form>
     <div class="container">
         <div class="navigation"></div>
@@ -41,33 +68,6 @@
             }
         </ul>
     </div>
-    <ul class="paging">
-        <li>
-            <ul class="pagination">
-                <li class="page-item @previousPage">
-                    @Html.ActionLink("<<", "Index", "Home", new { pageNumber = previousPageNumber, pageSize = Model.PageSize }, new { @class = "page-link" })
-                </li>
-                @for (int page = 1; page <= Model.TotalPages; page++)
-                {
-                    string isActive = (page == Model.PageNumber) ? "active" : "";
-                    <li class="page-item @isActive">
-                        @Html.ActionLink(page.ToString(), "Index", "Home", new { pageNumber = page, pageSize = Model.PageSize }, new { @class = "page-link" })
-                    </li>
-                }
-                <li class="page-item @nextPage">
-                    @Html.ActionLink(">>", "Index", "Home", new { pageNumber = nextPageNumber, pageSize = Model.PageSize }, new { @class = "page-link" })
-                </li>
-            </ul>
-        </li>
-        <li>
-            <select asp-for="PageSize"
-                    name="PageSize"
-                    class="form-select"
-                    asp-items="Html.GetEnumSelectList<PageSizeEnum>()"
-                    onchange="changePageSize(this)">
-            </select>
-        </li>
-    </ul>
 </div>
 
 <script>

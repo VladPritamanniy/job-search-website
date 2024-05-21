@@ -17,10 +17,21 @@ namespace JobSearch.WEB.Controllers
         }
 
         [HttpGet]
-		public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 5, string searchString = null)
+		public async Task<IActionResult> Index(string searchString, int pageNumber = 1, int pageSize = 10)
         {
             var vacanciesDto = await _vacancyService.GetAll(pageNumber, pageSize, searchString);
-            var vacanciesCount = _vacancyService.GetCount();
+
+            int vacanciesCount;
+            if (string.IsNullOrWhiteSpace(searchString))
+            {
+                vacanciesCount = _vacancyService.GetCount();
+            }
+            else
+            {
+                vacanciesCount = vacanciesDto.Count();
+                ViewData["SearchString"] = searchString;
+            }
+
             var vacanciesModel = _mapper.Map<IEnumerable<VacancyModel>>(vacanciesDto);
             var vacancies = new PagedListModel<VacancyModel>(vacanciesModel, pageNumber, pageSize, vacanciesCount);
             return View(vacancies);
