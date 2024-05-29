@@ -6,7 +6,7 @@ using Microsoft.Extensions.Options;
 
 namespace JobSearch.WEB.Areas.Admin.Controllers
 {
-	[Area("Admin")]
+	[Area("admin")]
 	public class HomeController : Controller
 	{
         private readonly IUserService _userService;

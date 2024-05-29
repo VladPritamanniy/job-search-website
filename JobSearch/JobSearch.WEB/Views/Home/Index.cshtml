@@ -4,6 +4,7 @@
 @using Microsoft.AspNetCore.Mvc.TagHelpers
 @model JobSearch.WEB.Models.PagedListModel<VacancyModel>
 @{
+    var items = Model.OrderByDescending(p => p.PublicationDate).ToArray();
     var previousPage = Model.HasPreviousPage ? "" : "disabled";
     var nextPage = Model.HasNextPage ? "" : "disabled";
     var previousPageNumber = Model.PageNumber - 1;
@@ -51,17 +52,17 @@
             {
                 <li class="vacancy-container">
                     <div>
-                        <h5><a>@Model[vacancy].Title</a></h5>
+                        <h5><a>@items[vacancy].Title</a></h5>
                         <ul class="search-labels">
-                            <li>@Model[vacancy].EmploymentTypeId.Humanize()</li>
-                            <li>@Model[vacancy].ExperienceId.Humanize()</li>
-                            <li>@Model[vacancy].FormatId.Humanize()</li>
+                            <li>@items[vacancy].EmploymentTypeId.Humanize()</li>
+                            <li>@items[vacancy].ExperienceId.Humanize()</li>
+                            <li>@items[vacancy].FormatId.Humanize()</li>
                         </ul>
                     </div>
                     <p class="vacancy-description">
-                        @Regex.Replace(Model[vacancy].Description, "<.*?>", String.Empty)
+                        @Regex.Replace(items[vacancy].Description, "<.*?>", String.Empty)
                     </p>
-                    <form asp-controller="Info" asp-action="Details" asp-route-Id="@Model[vacancy].VacancyId" method="get">
+                    <form asp-controller="Info" asp-action="Details" asp-route-Id="@items[vacancy].VacancyId" method="get">
                         <button type="submit" class="btn btn-info">@Resources.Resource.Button_ViewAndRespond</button>
                     </form>
                 </li>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobSearch.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bbda785ad0267419c88e31e0f2d03adb73a80a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ec5a4ed77167a4fc79db57992c4d68f67953bb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobSearch.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobSearch.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

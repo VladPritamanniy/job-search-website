@@ -9,10 +9,14 @@ using JobSearch.BLL.Services;
 using JobSearch.DLL.Context;
 using JobSearch.DLL.Interfaces;
 using JobSearch.DLL.Repositories;
+using JobSearch.WEB.ConfigurationHelpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace JobSearch.WEB
 {
@@ -35,7 +39,10 @@ namespace JobSearch.WEB
 
             services.Configure<JwtOptions>(builder.Configuration.GetSection(nameof(JwtOptions)));
 
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddMvcOptions(opts =>
+            {
+                opts.Conventions.Add(new KebabCaseControllerModelConvention());
+            });
 
             var connection = builder.Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<JobSearchContext>
@@ -90,6 +97,14 @@ namespace JobSearch.WEB
                     };
                 });
             services.AddAuthorization();
+
+            services.Configure<RouteOptions>(options =>
+            {
+                options.AppendTrailingSlash = true;
+                options.LowercaseUrls = true;
+                options.LowercaseQueryStrings = true;
+            });
+
             var app = builder.Build();
 
 			if (!app.Environment.IsDevelopment())
@@ -129,13 +144,12 @@ namespace JobSearch.WEB
             app.UseAuthentication();
 			app.UseAuthorization();
 
-            app.MapControllerRoute(
-                name: "Admin",
-                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+            app.MapAreaControllerRoute(
+                name: "admin",
+                areaName:"Admin",
+                pattern: "admin/{controller=Home}/{action=Index}/{id?}");
 
-            app.MapControllerRoute(
-				name: "default",
-				pattern: "{controller=Home}/{action=Index}/{id?}");
+            app.MapDefaultControllerRoute();
 
             app.Run();
 		}

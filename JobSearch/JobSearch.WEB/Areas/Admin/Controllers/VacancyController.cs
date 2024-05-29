@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace JobSearch.WEB.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("admin")]
     [Authorize]
     public class VacancyController : Controller
     {
