@@ -6,7 +6,7 @@ namespace JobSearch.BLL.Interfaces
     {
         Task<VacancyDto> Get(int id);
 
-        Task Create(VacancyDto vacancyDto);
+        Task CreateOrUpdateIfExist(VacancyDto vacancyDto);
 
         Task Delete(int id);
 

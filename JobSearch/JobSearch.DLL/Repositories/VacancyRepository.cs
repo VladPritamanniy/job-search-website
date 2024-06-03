@@ -54,6 +54,7 @@ namespace JobSearch.DLL.Repositories
                                  .AsNoTracking()
                                  .Search(searchString)
                                  .Page(pageNumber, pageSize)
+                                 .Where(p => p.IsPublished)
                                  .ToListAsync();
         }
 

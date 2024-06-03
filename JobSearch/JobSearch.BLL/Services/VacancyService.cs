@@ -23,7 +23,7 @@ namespace JobSearch.BLL.Services
             return _mapper.Map<VacancyDto>(vacancy);
         }
 
-        public async Task Create(VacancyDto vacancyDto)
+        public async Task CreateOrUpdateIfExist(VacancyDto vacancyDto)
         {
             await _vacancyRepository.CreateOrUpdateIfExist(_mapper.Map<Vacancy>(vacancyDto));
         }

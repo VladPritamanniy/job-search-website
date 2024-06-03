@@ -60,9 +60,9 @@ namespace JobSearch.WEB.Areas.Admin.Controllers
                 var vacancyModel = _mapper.Map<VacancyModel>(vacancy);
                 var vacancyDto = _mapper.Map<VacancyDto>(vacancyModel);
 
-                await _vacancyService.Create(vacancyDto);
+                await _vacancyService.CreateOrUpdateIfExist(vacancyDto);
 
-                return Redirect("Index");
+                return RedirectToAction("Index");
             }
             return RedirectToAction("Edit", vacancy);
         }
