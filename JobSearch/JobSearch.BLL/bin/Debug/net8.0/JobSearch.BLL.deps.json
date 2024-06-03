@@ -9,7 +9,7 @@
       "JobSearch.BLL/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
-          "JobSearch.DLL": "1.0.0",
+          "JobSearch.DAL": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.3",
           "Serilog.AspNetCore": "8.0.1"
         },
@@ -674,7 +674,7 @@
           }
         }
       },
-      "JobSearch.DLL/1.0.0": {
+      "JobSearch.DAL/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Microsoft.EntityFrameworkCore": "8.0.3",
@@ -682,7 +682,7 @@
           "Serilog.AspNetCore": "8.0.1"
         },
         "runtime": {
-          "JobSearch.DLL.dll": {}
+          "JobSearch.DAL.dll": {}
         }
       }
     }
@@ -1176,7 +1176,7 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
-    "JobSearch.DLL/1.0.0": {
+    "JobSearch.DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

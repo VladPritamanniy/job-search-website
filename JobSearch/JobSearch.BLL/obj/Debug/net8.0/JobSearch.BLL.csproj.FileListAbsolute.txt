@@ -32,8 +32,6 @@ D:\Дипломная работа НАУ 4-й курс\job-search-website\JobSe
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\bin\Debug\net8.0\JobSearch.BLL.deps.json
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\bin\Debug\net8.0\JobSearch.BLL.dll
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\bin\Debug\net8.0\JobSearch.BLL.pdb
-D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\bin\Debug\net8.0\JobSearch.DLL.dll
-D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\bin\Debug\net8.0\JobSearch.DLL.pdb
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\obj\Debug\net8.0\JobSearch.BLL.csproj.AssemblyReference.cache
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\obj\Debug\net8.0\JobSearch.BLL.GeneratedMSBuildEditorConfig.editorconfig
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\obj\Debug\net8.0\JobSearch.BLL.AssemblyInfoInputs.cache
@@ -45,3 +43,5 @@ D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\obj\Debug\net8.0\refint\JobSearch.BLL.dll
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\obj\Debug\net8.0\JobSearch.BLL.pdb
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\obj\Debug\net8.0\ref\JobSearch.BLL.dll
+D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\bin\Debug\net8.0\JobSearch.DAL.dll
+D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.BLL\bin\Debug\net8.0\JobSearch.DAL.pdb

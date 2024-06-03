@@ -808,9 +808,9 @@ D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\bin\Debug\net8.0\JobSearch.BLL.dll
-D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\bin\Debug\net8.0\JobSearch.DLL.dll
+D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\bin\Debug\net8.0\JobSearch.DAL.dll
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\bin\Debug\net8.0\JobSearch.BLL.pdb
-D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\bin\Debug\net8.0\JobSearch.DLL.pdb
+D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\bin\Debug\net8.0\JobSearch.DAL.pdb
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.csproj.AssemblyReference.cache
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.Resources.Resource.resources
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.Resources.Resource.en.resources
@@ -820,6 +820,7 @@ D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.AssemblyInfoInputs.cache
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.AssemblyInfo.cs
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.csproj.CoreCompileInputs.cache
+D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.MvcApplicationPartsAssemblyInfo.cs
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.MvcApplicationPartsAssemblyInfo.cache
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.RazorAssemblyInfo.cache
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.RazorAssemblyInfo.cs
@@ -842,4 +843,3 @@ D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.pdb
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.genruntimeconfig.cache
 D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\ref\JobSearch.WEB.dll
-D:\program-languages\С-sharp\my-personal-projects\job-search-website\JobSearch\JobSearch.WEB\obj\Debug\net8.0\JobSearch.WEB.MvcApplicationPartsAssemblyInfo.cs

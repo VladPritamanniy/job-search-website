@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using JobSearch.BLL.DTO;
-using JobSearch.DLL.EfClasses;
+using JobSearch.DAL.EfClasses;
 using JobSearch.WEB.Areas.Admin.Models;
 using JobSearch.WEB.Models;
 using JobSearch.WEB.ViewModels;

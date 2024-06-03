@@ -35,7 +35,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\JobSearch.BLL\JobSearch.BLL.csproj" />
-    <ProjectReference Include="..\JobSearch.DLL\JobSearch.DLL.csproj" />
+    <ProjectReference Include="..\JobSearch.DAL\JobSearch.DAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>

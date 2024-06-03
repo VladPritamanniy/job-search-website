@@ -1262,7 +1262,7 @@
           }
         }
       },
-      "JobSearch.DLL/1.0.0": {
+      "JobSearch.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1272,10 +1272,10 @@
           "Serilog.AspNetCore": "8.0.1"
         },
         "compile": {
-          "bin/placeholder/JobSearch.DLL.dll": {}
+          "bin/placeholder/JobSearch.DAL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/JobSearch.DLL.dll": {}
+          "bin/placeholder/JobSearch.DAL.dll": {}
         }
       }
     }
@@ -3363,16 +3363,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "JobSearch.DLL/1.0.0": {
+    "JobSearch.DAL/1.0.0": {
       "type": "project",
-      "path": "../JobSearch.DLL/JobSearch.DLL.csproj",
-      "msbuildProject": "../JobSearch.DLL/JobSearch.DLL.csproj"
+      "path": "../JobSearch.DAL/JobSearch.DAL.csproj",
+      "msbuildProject": "../JobSearch.DAL/JobSearch.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "BCrypt.Net-Next >= 4.0.3",
-      "JobSearch.DLL >= 1.0.0",
+      "JobSearch.DAL >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.3",
       "Serilog.AspNetCore >= 8.0.1"
     ]
@@ -3410,8 +3410,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\JobSearch.DLL.csproj": {
-              "projectPath": "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\JobSearch.DLL.csproj"
+            "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DAL\\JobSearch.DAL.csproj": {
+              "projectPath": "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DAL\\JobSearch.DAL.csproj"
             }
           }
         }

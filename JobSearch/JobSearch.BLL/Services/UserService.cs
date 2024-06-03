@@ -4,8 +4,8 @@ using System.Text;
 using AutoMapper;
 using JobSearch.BLL.DTO;
 using JobSearch.BLL.Interfaces;
-using JobSearch.DLL.EfClasses;
-using JobSearch.DLL.Interfaces;
+using JobSearch.DAL.EfClasses;
+using JobSearch.DAL.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 

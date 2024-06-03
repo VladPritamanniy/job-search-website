@@ -3061,7 +3061,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
-          "JobSearch.DLL": "1.0.0",
+          "JobSearch.DAL": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.3",
           "Serilog.AspNetCore": "8.0.1"
         },
@@ -3072,7 +3072,7 @@
           "bin/placeholder/JobSearch.BLL.dll": {}
         }
       },
-      "JobSearch.DLL/1.0.0": {
+      "JobSearch.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -3082,10 +3082,10 @@
           "Serilog.AspNetCore": "8.0.1"
         },
         "compile": {
-          "bin/placeholder/JobSearch.DLL.dll": {}
+          "bin/placeholder/JobSearch.DAL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/JobSearch.DLL.dll": {}
+          "bin/placeholder/JobSearch.DAL.dll": {}
         }
       }
     }
@@ -8493,17 +8493,17 @@
       "path": "../JobSearch.BLL/JobSearch.BLL.csproj",
       "msbuildProject": "../JobSearch.BLL/JobSearch.BLL.csproj"
     },
-    "JobSearch.DLL/1.0.0": {
+    "JobSearch.DAL/1.0.0": {
       "type": "project",
-      "path": "../JobSearch.DLL/JobSearch.DLL.csproj",
-      "msbuildProject": "../JobSearch.DLL/JobSearch.DLL.csproj"
+      "path": "../JobSearch.DAL/JobSearch.DAL.csproj",
+      "msbuildProject": "../JobSearch.DAL/JobSearch.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "FluentValidation.AspNetCore >= 11.3.0",
       "JobSearch.BLL >= 1.0.0",
-      "JobSearch.DLL >= 1.0.0",
+      "JobSearch.DAL >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.3",
@@ -8547,8 +8547,8 @@
             "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.BLL\\JobSearch.BLL.csproj": {
               "projectPath": "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.BLL\\JobSearch.BLL.csproj"
             },
-            "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\JobSearch.DLL.csproj": {
-              "projectPath": "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DLL\\JobSearch.DLL.csproj"
+            "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DAL\\JobSearch.DAL.csproj": {
+              "projectPath": "D:\\program-languages\\С-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.DAL\\JobSearch.DAL.csproj"
             }
           }
         }

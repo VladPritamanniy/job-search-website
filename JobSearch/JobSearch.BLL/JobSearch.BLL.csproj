@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JobSearch.DLL\JobSearch.DLL.csproj" />
+    <ProjectReference Include="..\JobSearch.DAL\JobSearch.DAL.csproj" />
   </ItemGroup>
 
 </Project>
