@@ -5,7 +5,9 @@
     int vacancyCounter = 1;
 }
 
-<div class="btn btn-primary btn-create">@Html.ActionLink(@Resources.Resource.Lable_CreateVacancy, "Edit", "VacancyDto", htmlAttributes: new { @class = "admin-lable" })</div>
+<div class="btn btn-primary btn-create">
+    @Html.ActionLink(@Resources.Resource.Lable_CreateVacancy, "Edit", null, htmlAttributes: new { @class = "admin-lable" })
+</div>
 <table class="table table-bordered table-striped table-vacancy">
     <thead>
         <tr>
