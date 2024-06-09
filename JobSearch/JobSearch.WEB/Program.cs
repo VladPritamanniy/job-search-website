@@ -10,6 +10,7 @@ using JobSearch.DAL.Context;
 using JobSearch.DAL.Interfaces;
 using JobSearch.DAL.Repositories;
 using JobSearch.WEB.ConfigurationHelpers;
+using JobSearch.WEB.HelperExtensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -22,11 +23,11 @@ namespace JobSearch.WEB
 {
     public class Program
 	{
-		public static void Main(string[] args)
+		public static async Task Main(string[] args)
 		{
 			var builder = WebApplication.CreateBuilder(args);
             var services = builder.Services;
-
+            
             builder.Services.AddDistributedMemoryCache();
             builder.Services.AddSession(options =>
             {
@@ -50,7 +51,6 @@ namespace JobSearch.WEB
 
             services.AddAutoMapper(typeof(AutoMapperProfile));
 
-			// DI
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IVacancyService, VacancyService>();
             services.AddScoped<IUserRepository, UserRepository>();
@@ -106,8 +106,9 @@ namespace JobSearch.WEB
             });
 
             var app = builder.Build();
+            await app.Services.MigrateDatabaseAsync();
 
-			if (!app.Environment.IsDevelopment())
+            if (!app.Environment.IsDevelopment())
 			{
 				app.UseExceptionHandler("/Home/Error");
 				app.UseHsts();
@@ -151,7 +152,7 @@ namespace JobSearch.WEB
 
             app.MapDefaultControllerRoute();
 
-            app.Run();
+            await app.RunAsync();
 		}
 	}
 }

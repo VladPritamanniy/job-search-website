@@ -3,11 +3,23 @@
   "WorkspaceRootPath": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\program-languages\\\u0441-sharp\\my-personal-projects\\job-search-website\\jobsearch\\jobsearch.web\\areas\\admin\\views\\vacancy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\program-languages\\\u0441-sharp\\my-personal-projects\\job-search-website\\jobsearch\\jobsearch.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\jobsearch.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\jobsearch.web\\helperextensions\\databaseextensionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\helperextensions\\databaseextensionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\jobsearch.web\\areas\\admin\\views\\vacancy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\areas\\admin\\views\\vacancy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|d:\\program-languages\\\u0441-sharp\\my-personal-projects\\job-search-website\\jobsearch\\jobsearch.web\\areas\\admin\\controllers\\vacancycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\jobsearch.web\\areas\\admin\\controllers\\vacancycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46CB7C90-0845-4AF6-9ACF-2FC5C3364BBA}|JobSearch.WEB\\JobSearch.WEB.csproj|solutionrelative:jobsearch.web\\areas\\admin\\controllers\\vacancycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 255,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,25 +69,20 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\Index.cshtml",
               "RelativeDocumentMoniker": "JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\Index.cshtml",
               "ToolTip": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\Index.cshtml",
               "RelativeToolTip": "JobSearch.WEB\\Areas\\Admin\\Views\\Vacancy\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-06T16:58:38.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T16:58:38.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "VacancyController.cs",
               "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\Areas\\Admin\\Controllers\\VacancyController.cs",
               "RelativeDocumentMoniker": "JobSearch.WEB\\Areas\\Admin\\Controllers\\VacancyController.cs",
@@ -83,7 +90,43 @@
               "RelativeToolTip": "JobSearch.WEB\\Areas\\Admin\\Controllers\\VacancyController.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAASwCcAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T16:59:06.465Z",
+              "WhenOpened": "2024-06-06T16:59:06.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\Program.cs",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\Program.cs",
+              "ToolTip": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\Program.cs",
+              "RelativeToolTip": "JobSearch.WEB\\Program.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAgwGMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T12:06:53.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatabaseExtensionHelper.cs",
+              "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\HelperExtensions\\DatabaseExtensionHelper.cs",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\HelperExtensions\\DatabaseExtensionHelper.cs",
+              "ToolTip": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\HelperExtensions\\DatabaseExtensionHelper.cs",
+              "RelativeToolTip": "JobSearch.WEB\\HelperExtensions\\DatabaseExtensionHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T11:39:22.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "JobSearch.WEB\\appsettings.Development.json",
+              "ToolTip": "D:\\program-languages\\\u0421-sharp\\my-personal-projects\\job-search-website\\JobSearch\\JobSearch.WEB\\appsettings.Development.json",
+              "RelativeToolTip": "JobSearch.WEB\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-09T11:47:20.801Z",
               "EditorCaption": ""
             }
           ]
