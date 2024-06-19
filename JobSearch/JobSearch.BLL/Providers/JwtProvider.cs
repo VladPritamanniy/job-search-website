@@ -23,8 +23,8 @@ namespace JobSearch.BLL.Providers
                 SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                issuer: configuration["JwtOptions:ValidIssuer"],
-                audience: configuration["JwtOptions:ValidAudience"],
+                issuer: _options.ValidIssuer,
+                audience: _options.ValidAudience,
                 claims: claims,
                 signingCredentials: signingCredentials,
                 expires: DateTime.UtcNow.AddMinutes(_options.JwtExpires));
