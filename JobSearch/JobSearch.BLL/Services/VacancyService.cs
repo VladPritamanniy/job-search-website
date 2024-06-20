@@ -50,6 +50,11 @@ namespace JobSearch.BLL.Services
             return _vacancyRepository.GetCount();
         }
 
+        public int GetCount(string searchString)
+        {
+            return _vacancyRepository.GetCount(searchString);
+        }
+
         public async Task AddResponse(VacancyResponseDto responseDto)
         {
             await _vacancyRepository.AddResponse(_mapper.Map<VacancyResponse>(responseDto));

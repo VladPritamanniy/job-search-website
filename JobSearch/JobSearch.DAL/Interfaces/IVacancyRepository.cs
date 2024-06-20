@@ -14,6 +14,8 @@ namespace JobSearch.DAL.Interfaces
 
         int GetCount();
 
+        int GetCount(string searchString);
+
         Task Delete(int id);
 
         Task AddResponse(VacancyResponse response);

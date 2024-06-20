@@ -7,6 +7,7 @@ using JobSearch.BLL.Interfaces;
 using JobSearch.DAL.EfClasses;
 using JobSearch.DAL.Interfaces;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
 namespace JobSearch.BLL.Services
@@ -18,14 +19,16 @@ namespace JobSearch.BLL.Services
         private readonly IMapper _mapper;
         private readonly IJwtProvider _jwtProvider;
         private readonly IConfiguration _configuration;
+        private readonly IOptions<JwtOptions> _options;
 
-        public UserService(IPasswordHasher passwordHasher, IUserRepository userRepository, IMapper mapper, IJwtProvider jwtProvider, IConfiguration configuration)
+        public UserService(IPasswordHasher passwordHasher, IUserRepository userRepository, IMapper mapper, IJwtProvider jwtProvider, IConfiguration configuration, IOptions<JwtOptions> options)
         {
             _passwordHasher = passwordHasher;
             _userRepository = userRepository;
             _mapper = mapper;
             _jwtProvider = jwtProvider;
             _configuration = configuration;
+            _options = options;
         }
 
         public async Task Register(string email, string password)
@@ -54,8 +57,8 @@ namespace JobSearch.BLL.Services
             {
                 Email = email,
                 RefreshToken = refreshToken,
-                RefreshTokenExpiry = DateTime.UtcNow.AddDays(30)
-            };
+                RefreshTokenExpiry = DateTime.UtcNow.AddMonths(_options.Value.RefreshExpires).ToLocalTime()
+        };
             await _userRepository.Update(_mapper.Map<User>(userDto));
 
             return new RefreshTokenOptions{ AccessToken = accessToken, RefreshToken = refreshToken };
@@ -81,7 +84,7 @@ namespace JobSearch.BLL.Services
                     {
                         Email = mapUser.Email,
                         RefreshToken = newRefreshTokenn,
-                        RefreshTokenExpiry = DateTime.UtcNow.AddDays(30)
+                        RefreshTokenExpiry = DateTime.UtcNow.AddMonths(_options.Value.RefreshExpires).ToLocalTime()
                     };
 
                     await _userRepository.Update(_mapper.Map<User>(userDto));

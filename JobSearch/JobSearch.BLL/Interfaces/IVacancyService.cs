@@ -16,6 +16,8 @@ namespace JobSearch.BLL.Interfaces
 
         int GetCount();
 
+        int GetCount(string searchString);
+
         Task AddResponse(VacancyResponseDto responseDto);
 
         Task<IEnumerable<VacancyResponseDto>> GetResponsesByVacancyId(int id);

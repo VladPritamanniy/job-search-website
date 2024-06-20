@@ -4,7 +4,7 @@
 @using Microsoft.AspNetCore.Mvc.TagHelpers
 @model JobSearch.WEB.Models.PagedListModel<VacancyModel>
 @{
-    var items = Model.OrderByDescending(p => p.PublicationDate).ToArray();
+    var items = Model.ToArray();
     var previousPage = Model.HasPreviousPage ? "" : "disabled";
     var nextPage = Model.HasNextPage ? "" : "disabled";
     var previousPageNumber = Model.PageNumber - 1;
@@ -21,27 +21,19 @@
             <li>
                 <ul class="pagination">
                     <li class="page-item @previousPage">
-                        @Html.ActionLink("<<", "Index", "Home", new { searchString = ViewData["SearchString"], pageNumber = previousPageNumber, pageSize = Model.PageSize }, new { @class = "page-link" })
+                        @Html.ActionLink("<<", "Index", "Home", new { searchString = ViewData["SearchString"], pageNumber = previousPageNumber }, new { @class = "page-link" })
                     </li>
                     @for (int page = 1; page <= Model.TotalPages; page++)
                     {
                         string isActive = (page == Model.PageNumber) ? "active" : "";
                         <li class="page-item @isActive">
-                            @Html.ActionLink(page.ToString(), "Index", "Home", new { searchString = ViewData["SearchString"], pageNumber = page, pageSize = Model.PageSize }, new { @class = "page-link" })
+                            @Html.ActionLink(page.ToString(), "Index", "Home", new { searchString = ViewData["SearchString"], pageNumber = page }, new { @class = "page-link" })
                         </li>
                     }
                     <li class="page-item @nextPage">
-                        @Html.ActionLink(">>", "Index", "Home", new { searchString = ViewData["SearchString"], pageNumber = nextPageNumber, pageSize = Model.PageSize }, new { @class = "page-link" })
+                        @Html.ActionLink(">>", "Index", "Home", new { searchString = ViewData["SearchString"], pageNumber = nextPageNumber }, new { @class = "page-link" })
                     </li>
                 </ul>
-            </li>
-            <li>
-                <select asp-for="PageSize"
-                        name="pageSize"
-                        asp-items="Html.GetEnumSelectList<PageSizeEnum>()"
-                        class="form-select"
-                        onchange="changePageSize(this)">
-                </select>
             </li>
         </ul>
     </form>
@@ -78,9 +70,4 @@
             description.textContent = description.textContent.substring(0, 450) + '...';
         }
     });
-
-    function changePageSize(selectElement) {
-        let actionLinkUrl = '@Url.Action("Index", "Home")' + '?pageNumber=' + @Model.PageNumber + '&pageSize=' + selectElement.value;
-        window.location.href = actionLinkUrl;
-    }
 </script>

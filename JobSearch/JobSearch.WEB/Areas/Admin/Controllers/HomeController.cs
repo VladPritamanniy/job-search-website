@@ -46,7 +46,7 @@ namespace JobSearch.WEB.Areas.Admin.Controllers
                     };
                     Response.Cookies.Append("tasty-cookies", tokens.AccessToken, cookieOptions);
 
-                    cookieOptions.Expires = DateTime.UtcNow.AddDays(_options.Value.RefreshExpires);
+                    cookieOptions.Expires = DateTime.UtcNow.AddMonths(_options.Value.RefreshExpires).ToLocalTime();
                     Response.Cookies.Append("very-tasty-cookies", tokens.RefreshToken, cookieOptions);
 
                     return RedirectToAction("Index", "Vacancy");

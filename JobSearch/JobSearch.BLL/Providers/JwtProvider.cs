@@ -27,7 +27,7 @@ namespace JobSearch.BLL.Providers
                 audience: _options.ValidAudience,
                 claims: claims,
                 signingCredentials: signingCredentials,
-                expires: DateTime.UtcNow.AddMinutes(_options.JwtExpires));
+                expires: DateTime.UtcNow.AddMonths(_options.JwtExpires).ToLocalTime());
 
             var tokenValue = new JwtSecurityTokenHandler().WriteToken(token);
 

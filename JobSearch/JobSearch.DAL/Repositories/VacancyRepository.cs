@@ -45,22 +45,41 @@ namespace JobSearch.DAL.Repositories
         {
             return await _context.Vacancies
                                  .AsNoTracking()
+                                 .OrderByDescending(p => p.PublicationDate)
                                  .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Vacancy>> GetAll(string searchString)
+        {
+            return await _context.Vacancies
+                .AsNoTracking()
+                .OrderByDescending(p => p.PublicationDate)
+                .Search(searchString)
+                .ToListAsync();
         }
 
         public async Task<IEnumerable<Vacancy>> GetAll(int pageNumber, int pageSize, string searchString)
         {
             return await _context.Vacancies
                                  .AsNoTracking()
+                                 .Where(p => p.IsPublished)
+                                 .OrderByDescending(p => p.PublicationDate)
                                  .Search(searchString)
                                  .Page(pageNumber, pageSize)
-                                 .Where(p => p.IsPublished)
                                  .ToListAsync();
         }
 
         public int GetCount()
         {
             return _context.Vacancies.Count();
+        }
+
+        public int GetCount(string searchString)
+        {
+            return _context.Vacancies
+                           .Where(p => p.IsPublished)
+                           .Search(searchString)
+                           .Count();
         }
 
         public async Task Delete(int id)

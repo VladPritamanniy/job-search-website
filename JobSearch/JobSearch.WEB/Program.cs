@@ -41,7 +41,7 @@ namespace JobSearch.WEB
 
             var connection = builder.Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<JobSearchContext>
-                (options => options.UseSqlServer(connection));
+                (options => options.UseSqlServer(connection, b => b.MigrationsAssembly("JobSearch.DAL")));
 
             services.AddAutoMapper(typeof(AutoMapperProfile));
 

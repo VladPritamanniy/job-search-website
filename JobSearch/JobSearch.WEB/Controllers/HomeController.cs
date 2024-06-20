@@ -17,7 +17,7 @@ namespace JobSearch.WEB.Controllers
         }
 
         [HttpGet]
-		public async Task<IActionResult> Index(string searchString, int pageNumber = 1, int pageSize = 10)
+		public async Task<IActionResult> Index(string searchString, int pageNumber = 1, int pageSize = 2)
         {
             var vacanciesDto = await _vacancyService.GetAll(pageNumber, pageSize, searchString);
 
@@ -28,7 +28,7 @@ namespace JobSearch.WEB.Controllers
             }
             else
             {
-                vacanciesCount = vacanciesDto.Count();
+                vacanciesCount = _vacancyService.GetCount(searchString);
                 ViewData["SearchString"] = searchString;
             }
 
